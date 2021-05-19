@@ -10,7 +10,7 @@ Next goal for this project is to Automate the Railway Ticket Process using Autom
 
 # Tech & Tools Used
 * #### Visual Studio ( With Installed Supported Packages for .Net)
-* ![](need_to_install.png)
+ ![](need_to_install.png)
 
 * #### C# Programming Language
 
