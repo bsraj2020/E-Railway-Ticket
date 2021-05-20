@@ -77,9 +77,9 @@ namespace E_Ticket_Pro_472
             dBAccess.ReadDataThroughAdapter(query2, dt_ID_deatails);
             comboBox_ID_MainWindow.DataSource = dt_ID_deatails;
             comboBox_ID_MainWindow.DisplayMember = "ID_username" ;
-            comboBox_Slot_MainWindow.Text = "1";
+            comboBox_Slot_MainWindow.Text = "1";            
 
-           
+
         }
 
         private void openTicketToolStripMenuItem_Click(object sender, EventArgs e)
@@ -98,6 +98,11 @@ namespace E_Ticket_Pro_472
         private void editTicketToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pNRStatusToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }

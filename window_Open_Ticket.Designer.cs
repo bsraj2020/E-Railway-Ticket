@@ -43,10 +43,10 @@ namespace E_Ticket_Pro_472
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox_SelectedTicket = new System.Windows.Forms.ComboBox();
             this.button_Open = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.bttn_Edit = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn_pair = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_Edit = new System.Windows.Forms.Button();
+            this.btn_DeleteAll = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_All_Tickets)).BeginInit();
             this.SuspendLayout();
@@ -189,61 +189,62 @@ namespace E_Ticket_Pro_472
             this.button_Open.UseVisualStyleBackColor = false;
             this.button_Open.Click += new System.EventHandler(this.button_Open_Click);
             // 
-            // button2
+            // btn_pair
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(449, 367);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 29);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Pair";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_pair.Enabled = false;
+            this.btn_pair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_pair.Location = new System.Drawing.Point(449, 367);
+            this.btn_pair.Name = "btn_pair";
+            this.btn_pair.Size = new System.Drawing.Size(75, 29);
+            this.btn_pair.TabIndex = 4;
+            this.btn_pair.Text = "Pair";
+            this.btn_pair.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_delete
             // 
-            this.button3.BackColor = System.Drawing.Color.DimGray;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(348, 367);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 29);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_delete.BackColor = System.Drawing.Color.DimGray;
+            this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.Location = new System.Drawing.Point(348, 367);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(75, 29);
+            this.btn_delete.TabIndex = 4;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Click += new System.EventHandler(this.button3_Click);
             // 
-            // bttn_Edit
+            // btn_Edit
             // 
-            this.bttn_Edit.BackColor = System.Drawing.Color.Peru;
-            this.bttn_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttn_Edit.Location = new System.Drawing.Point(541, 367);
-            this.bttn_Edit.Name = "bttn_Edit";
-            this.bttn_Edit.Size = new System.Drawing.Size(75, 29);
-            this.bttn_Edit.TabIndex = 4;
-            this.bttn_Edit.Text = "Edit";
-            this.bttn_Edit.UseVisualStyleBackColor = false;
-            this.bttn_Edit.Click += new System.EventHandler(this.bttn_Edit_Click);
+            this.btn_Edit.BackColor = System.Drawing.Color.Peru;
+            this.btn_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Edit.Location = new System.Drawing.Point(541, 367);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(75, 29);
+            this.btn_Edit.TabIndex = 4;
+            this.btn_Edit.Text = "Edit";
+            this.btn_Edit.UseVisualStyleBackColor = false;
+            this.btn_Edit.Click += new System.EventHandler(this.bttn_Edit_Click);
             // 
-            // button5
+            // btn_DeleteAll
             // 
-            this.button5.BackColor = System.Drawing.Color.DimGray;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(681, 369);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(107, 29);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Delete All";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btn_DeleteAll.BackColor = System.Drawing.Color.DimGray;
+            this.btn_DeleteAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DeleteAll.Location = new System.Drawing.Point(681, 369);
+            this.btn_DeleteAll.Name = "btn_DeleteAll";
+            this.btn_DeleteAll.Size = new System.Drawing.Size(107, 29);
+            this.btn_DeleteAll.TabIndex = 4;
+            this.btn_DeleteAll.Text = "Delete All";
+            this.btn_DeleteAll.UseVisualStyleBackColor = false;
+            this.btn_DeleteAll.Click += new System.EventHandler(this.button5_Click);
             // 
             // window_Open_Ticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.bttn_Edit);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_Edit);
+            this.Controls.Add(this.btn_DeleteAll);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_pair);
             this.Controls.Add(this.button_Open);
             this.Controls.Add(this.comboBox_SelectedTicket);
             this.Controls.Add(this.label8);
@@ -274,9 +275,9 @@ namespace E_Ticket_Pro_472
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox_SelectedTicket;
         private System.Windows.Forms.Button button_Open;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button bttn_Edit;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_pair;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button btn_Edit;
+        private System.Windows.Forms.Button btn_DeleteAll;
     }
 }

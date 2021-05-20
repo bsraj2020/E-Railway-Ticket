@@ -38,7 +38,7 @@ namespace E_Ticket_Pro_472
             this.newTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comingSoonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pNRStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.howToUseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel_LicenceValidity = new System.Windows.Forms.Panel();
@@ -158,18 +158,20 @@ namespace E_Ticket_Pro_472
             // toolsToolStripMenuItem
             // 
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.comingSoonToolStripMenuItem});
+            this.pNRStatusToolStripMenuItem});
             this.toolsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(17, 0, 4, 0);
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(60, 34);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
-            // comingSoonToolStripMenuItem
+            // pNRStatusToolStripMenuItem
             // 
-            this.comingSoonToolStripMenuItem.Name = "comingSoonToolStripMenuItem";
-            this.comingSoonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.comingSoonToolStripMenuItem.Text = "Coming Soon";
+            this.pNRStatusToolStripMenuItem.Enabled = false;
+            this.pNRStatusToolStripMenuItem.Name = "pNRStatusToolStripMenuItem";
+            this.pNRStatusToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pNRStatusToolStripMenuItem.Text = "PNR Status";
+            this.pNRStatusToolStripMenuItem.Click += new System.EventHandler(this.pNRStatusToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -582,7 +584,6 @@ namespace E_Ticket_Pro_472
         private System.Windows.Forms.ToolStripMenuItem addDeleteBankToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newTicketToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openTicketToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem comingSoonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem howToUseToolStripMenuItem;
         private System.Windows.Forms.Panel panel_LicenceValidity;
         private System.Windows.Forms.Label lbl_YourLicenceValidity;
@@ -613,6 +614,7 @@ namespace E_Ticket_Pro_472
         public System.Windows.Forms.Label lbl_Quota;
         public System.Windows.Forms.CheckBox checkBox_WLStop;
         public System.Windows.Forms.Panel panel_NoForm_Loaded_Top;
+        private System.Windows.Forms.ToolStripMenuItem pNRStatusToolStripMenuItem;
     }
 }
 

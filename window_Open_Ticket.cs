@@ -117,10 +117,14 @@ namespace E_Ticket_Pro_472
                     window_new_Ticket window_New_Ticket = new window_new_Ticket();
                     window_New_Ticket.Show();
 
-                    //fill old info
-                    window_New_Ticket.textBox_From.Text = dt_Selected_ticket_details.Rows[0]["From_st"].ToString();
+                window_New_Ticket.dateTimePicker_new_ticket.Format = DateTimePickerFormat.Custom;
+                window_New_Ticket.dateTimePicker_new_ticket.CustomFormat = "dd/MM/yyyy";
+                window_New_Ticket.dateTimePicker_new_ticket.Text = DateTime.Today.ToString();
+
+                //fill old info
+                window_New_Ticket.textBox_From.Text = dt_Selected_ticket_details.Rows[0]["From_st"].ToString();
                     window_New_Ticket.textBox_To.Text = dt_Selected_ticket_details.Rows[0]["To_st"].ToString();
-                    window_New_Ticket.dateTimePicker_new_ticket.Text = dt_Selected_ticket_details.Rows[0]["Date"].ToString();
+               //     window_New_Ticket.dateTimePicker_new_ticket.Text = dt_Selected_ticket_details.Rows[0]["Date"].ToString();   
                     window_New_Ticket.comboBox_Quota.Text = dt_Selected_ticket_details.Rows[0]["Quota"].ToString();
                     window_New_Ticket.comboBox_Class.Text = dt_Selected_ticket_details.Rows[0]["Class"].ToString();
                     window_New_Ticket.textBox_Boarding.Text = dt_Selected_ticket_details.Rows[0]["Board"].ToString();
@@ -175,79 +179,6 @@ namespace E_Ticket_Pro_472
                     window_New_Ticket.checkBox_P6_Senior.Checked = (dt_Selected_ticket_details.Rows[0]["P6_S_Citizen"].ToString() == "0") ? false : true;
                     window_New_Ticket.checkBox_P6_Child.Checked = (dt_Selected_ticket_details.Rows[0]["P6_Child"].ToString() == "0") ? false : true;
 
-/*
-                string Insert_query = "insert into   Passenger_table(From_st,To_st,Date,Quota,Class,Board,TrainNo, PT_Fare,PaymentMethod, Slot_no, Mobile_no,Irctc_id,Ticket_Name,P1_Name,P1_Age,P1_Gender,P1_Birth,P1_S_Citizen,P1_Child,P2_Name,P2_Age,P2_Gender,P2_Birth,P2_S_Citizen,P2_Child,P3_Name,P3_Age,P3_Gender,P3_Birth,P3_S_Citizen,P3_Child,P4_Name,P4_Age,P4_Gender,P4_Birth,P4_S_Citizen,P4_Child,P5_Name,P5_Age,P5_Gender,P5_Birth,P5_S_Citizen,P5_Child,P6_Name,P6_Age,P6_Gender,P6_Birth,P6_S_Citizen,P6_Child )   " +
-                            "values( @From_,@To_,@Date_,@Quota_,@Class_,@Board_,@TrainNo_, @PT_Fare_,@PaymentMethod_, @Slot_no_," +
-                            " @Mobile_no_,@Irctc_id_,@Ticket_Name_,@P1_Name_,@P1_Age_,@P1_Gender_,@P1_Birth_,@P1_S_Citizen_,@P1_Child_,@P2_Name_,@P2_Age_,@P2_Gender_,@P2_Birth_," +
-                            "@P2_S_Citizen_,@P2_Child_,@P3_Name_,@P3_Age_,@P3_Gender_,@P3_Birth_,@P3_S_Citizen_,@P3_Child_,@P4_Name_,@P4_Age_,@P4_Gender_,@P4_Birth_,@P4_S_Citizen_,@P4_Child_," +
-                            "@P5_Name_,@P5_Age_,@P5_Gender_,@P5_Birth_,@P5_S_Citizen_,@P5_Child_,@P6_Name_,@P6_Age_,@P6_Gender_,@P6_Birth_,@P6_S_Citizen_,@P6_Child_  )    ";
-
-                
-                SqlCommand insertcommand = new SqlCommand(Insert_query);
-
-                insertcommand.Parameters.AddWithValue("@From_", window_New_Ticket.textBox_From.Text);
-                insertcommand.Parameters.AddWithValue("@To_", window_New_Ticket.textBox_To.Text);
-                insertcommand.Parameters.AddWithValue("@Date_", window_New_Ticket.dateTimePicker_new_ticket.Text);
-                insertcommand.Parameters.AddWithValue("@Quota_", window_New_Ticket.comboBox_Quota.Text);
-                insertcommand.Parameters.AddWithValue("@Class_", window_New_Ticket.comboBox_Class.Text);
-                insertcommand.Parameters.AddWithValue("@Board_", window_New_Ticket.textBox_Boarding.Text);
-                insertcommand.Parameters.AddWithValue("@TrainNo_", window_New_Ticket.textBox_TrainNo.Text);
-                insertcommand.Parameters.AddWithValue("@PT_Fare_", window_New_Ticket.textBox_PTFare.Text);
-                insertcommand.Parameters.AddWithValue("@PaymentMethod_", window_New_Ticket.comboBox_PaymentMethod.Text);
-                insertcommand.Parameters.AddWithValue("@Slot_no_", window_New_Ticket.comboBox_SlotNo.Text);
-                insertcommand.Parameters.AddWithValue("@Mobile_no_", window_New_Ticket.textBox_MobileNo.Text);
-                insertcommand.Parameters.AddWithValue("@Irctc_id_", window_New_Ticket.comboBox_Irctc_id.Text);
-                insertcommand.Parameters.AddWithValue("@Ticket_Name_", window_New_Ticket.textBox_Ticket_name.Text);
-
-                insertcommand.Parameters.AddWithValue("@P1_Name_", window_New_Ticket.textBox_P1_Name.Text);
-                insertcommand.Parameters.AddWithValue("@P1_Age_", window_New_Ticket.textBox_P1_Age.Text);
-                insertcommand.Parameters.AddWithValue("@P1_Gender_", window_New_Ticket.comboBox_P1_Gender.Text); // P1 passengers Deatils
-                insertcommand.Parameters.AddWithValue("@P1_Birth_", window_New_Ticket.comboBox_P1_Birth.Text);
-                insertcommand.Parameters.AddWithValue("@P1_S_Citizen_", window_New_Ticket.checkBox_P1_Senior.Checked);
-                insertcommand.Parameters.AddWithValue("@P1_Child_", window_New_Ticket.checkBox_P1_Child.Checked);
-
-                insertcommand.Parameters.AddWithValue("@P2_Name_", window_New_Ticket.textBox_P2_Name.Text);
-                insertcommand.Parameters.AddWithValue("@P2_Age_", window_New_Ticket.textBox_P2_Age.Text);
-                insertcommand.Parameters.AddWithValue("@P2_Gender_", window_New_Ticket.comboBox_P2_Gender.Text); // P1 passengers Deatils
-                insertcommand.Parameters.AddWithValue("@P2_Birth_", window_New_Ticket.comboBox_P2_Birth.Text);
-                insertcommand.Parameters.AddWithValue("@P2_S_Citizen_", window_New_Ticket.checkBox_P2_Senior.Checked);
-                insertcommand.Parameters.AddWithValue("@P2_Child_", window_New_Ticket.checkBox_P2_Child.Checked);
-
-                insertcommand.Parameters.AddWithValue("@P3_Name_", window_New_Ticket.textBox_P3_Name.Text);
-                insertcommand.Parameters.AddWithValue("@P3_Age_", window_New_Ticket.textBox_P3_Age.Text);
-                insertcommand.Parameters.AddWithValue("@P3_Gender_", window_New_Ticket.comboBox_P3_Gender.Text); // P1 passengers Deatils
-                insertcommand.Parameters.AddWithValue("@P3_Birth_", window_New_Ticket.comboBox_P3_Birth.Text);
-                insertcommand.Parameters.AddWithValue("@P3_S_Citizen_", window_New_Ticket.checkBox_P3_Senior.Checked);
-                insertcommand.Parameters.AddWithValue("@P3_Child_", window_New_Ticket.checkBox_P3_Child.Checked);
-
-                insertcommand.Parameters.AddWithValue("@P4_Name_", window_New_Ticket.textBox_P4_Name.Text);
-                insertcommand.Parameters.AddWithValue("@P4_Age_", window_New_Ticket.textBox_P4_Age.Text);
-                insertcommand.Parameters.AddWithValue("@P4_Gender_", window_New_Ticket.comboBox_P4_Gender.Text); // P1 passengers Deatils
-                insertcommand.Parameters.AddWithValue("@P4_Birth_", window_New_Ticket.comboBox_P4_Birth.Text);
-                insertcommand.Parameters.AddWithValue("@P4_S_Citizen_", window_New_Ticket.checkBox_P4_Senior.Checked);
-                insertcommand.Parameters.AddWithValue("@P4_Child_", window_New_Ticket.checkBox_P4_Child.Checked);
-
-                insertcommand.Parameters.AddWithValue("@P5_Name_", window_New_Ticket.textBox_P5_Name.Text);
-                insertcommand.Parameters.AddWithValue("@P5_Age_", window_New_Ticket.textBox_P5_Age.Text);
-                insertcommand.Parameters.AddWithValue("@P5_Gender_", window_New_Ticket.comboBox_P5_Gender.Text); // P1 passengers Deatils
-                insertcommand.Parameters.AddWithValue("@P5_Birth_", window_New_Ticket.comboBox_P5_Birth.Text);
-                insertcommand.Parameters.AddWithValue("@P5_S_Citizen_", window_New_Ticket.checkBox_P5_Senior.Checked);
-                insertcommand.Parameters.AddWithValue("@P5_Child_", window_New_Ticket.checkBox_P5_Child.Checked);
-
-                insertcommand.Parameters.AddWithValue("@P6_Name_", window_New_Ticket.textBox_P6_Name.Text);
-                insertcommand.Parameters.AddWithValue("@P6_Age_", window_New_Ticket.textBox_P6_Age.Text);
-                insertcommand.Parameters.AddWithValue("@P6_Gender_", window_New_Ticket.comboBox_P6_Gender.Text); // P1 passengers Deatils
-                insertcommand.Parameters.AddWithValue("@P6_Birth_", window_New_Ticket.comboBox_P6_Birth.Text);
-                insertcommand.Parameters.AddWithValue("@P6_S_Citizen_", window_New_Ticket.checkBox_P6_Senior.Checked);
-                insertcommand.Parameters.AddWithValue("@P6_Child_", window_New_Ticket.checkBox_P6_Child.Checked);
-
-                int rows = dBAccess.ExecuteQuery(insertcommand);
-                if (rows > 0)
-                {
-                    MessageBox.Show("Tickets Saved as New Ticket Successfully");
-                    Refresh_dataGrid_Open_tkts();
-                }
-                else MessageBox.Show("Unable to Update Ticket , Please try again");*/
 
 
 
@@ -281,8 +212,6 @@ namespace E_Ticket_Pro_472
             window_Main.lbl_DOJ.Text = dt_ticket_details.Rows[0]["Date"].ToString();
 
             
-            // window_Main.comboBox_ID_MainWindow.Text       = window_Main.dt_ID_deatails.Rows[]["ID_username"].ToString();
-            // window_Main.comboBox_BankName_MainWindow.Text =  window_Main.dt_bank_details.Rows[0]["UPI_id"].ToString();
 
             window_Main.Text = dt_ticket_details.Rows[0]["Ticket_Name"].ToString(); 
 

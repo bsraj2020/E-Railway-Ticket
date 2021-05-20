@@ -171,6 +171,7 @@ namespace E_Ticket_Pro_472
             // 
             // btn_reset
             // 
+            this.btn_reset.Enabled = false;
             this.btn_reset.Location = new System.Drawing.Point(749, 27);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(75, 26);
@@ -180,6 +181,7 @@ namespace E_Ticket_Pro_472
             // 
             // btn_search
             // 
+            this.btn_search.Enabled = false;
             this.btn_search.ForeColor = System.Drawing.Color.Black;
             this.btn_search.Location = new System.Drawing.Point(645, 26);
             this.btn_search.Name = "btn_search";
@@ -192,7 +194,7 @@ namespace E_Ticket_Pro_472
             // 
             this.dateTimePicker_new_ticket.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
             this.dateTimePicker_new_ticket.CalendarTitleForeColor = System.Drawing.Color.AliceBlue;
-            this.dateTimePicker_new_ticket.CustomFormat = "dd MM yyyy";
+            this.dateTimePicker_new_ticket.CustomFormat = "";
             this.dateTimePicker_new_ticket.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_new_ticket.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_new_ticket.Location = new System.Drawing.Point(459, 34);
@@ -200,7 +202,7 @@ namespace E_Ticket_Pro_472
             this.dateTimePicker_new_ticket.Name = "dateTimePicker_new_ticket";
             this.dateTimePicker_new_ticket.Size = new System.Drawing.Size(139, 21);
             this.dateTimePicker_new_ticket.TabIndex = 3;
-            this.dateTimePicker_new_ticket.Value = new System.DateTime(2021, 5, 12, 0, 0, 0, 0);
+            this.dateTimePicker_new_ticket.Value = new System.DateTime(2021, 5, 20, 0, 0, 0, 0);
             // 
             // textBox_From
             // 
