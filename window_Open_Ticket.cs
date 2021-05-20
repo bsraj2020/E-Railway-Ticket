@@ -68,38 +68,12 @@ namespace E_Ticket_Pro_472
 
         private void button3_Click(object sender, EventArgs e)
         {
-          DialogResult dr =  MessageBox.Show("Want to Delete Selected Ticket","Delete Selected Ticket", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (dr == DialogResult.Yes)
-            {
-                SqlCommand command = new SqlCommand("delete from Passenger_table where Ticket_Name = '" + comboBox_SelectedTicket.Text + "' ");
-              int row =  dBAccess.ExecuteQuery(command);
 
-                if (row > 0)
-                {
-                    MessageBox.Show("Ticket Deleted Successfully");
-
-                    Refresh_dataGrid_Open_tkts();
-                }
-                else MessageBox.Show("Unable to delete , Please Try again");
-            }
-            
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Want to Delete All Tickets", "Delete All Tickets", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (dr == DialogResult.Yes)
-            {
-                SqlCommand command = new SqlCommand("truncate table Passenger_table  ");
-                int row = dBAccess.ExecuteQuery(command);
 
-                if (row > 0)
-                {
-                    MessageBox.Show("All Tickets Deleted Successfully");
-                    Refresh_dataGrid_Open_tkts();
-                }
-                else MessageBox.Show("Unable to delete , Please Try again");
-            }
         }
 
         private void bttn_Edit_Click(object sender, EventArgs e)
@@ -220,5 +194,70 @@ namespace E_Ticket_Pro_472
            
 
         }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                DialogResult dr = MessageBox.Show("Want to Delete Selected Id", "Delete Id", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                if (dr == DialogResult.Yes)
+                {
+                    string query = "delete from Passenger_table where Ticket_Name = '" + comboBox_SelectedTicket.Text + "' ";
+                    SqlCommand command = new SqlCommand(query);
+
+                    int Rows;// random beacuse truncate would return -1
+                    Rows = dBAccess.ExecuteQuery(command);
+
+                    if (Rows > 0)
+                    {
+                        MessageBox.Show(" Ticket deleted Successfully");
+                        Refresh_dataGrid_Open_tkts();
+
+                    }
+                    else MessageBox.Show("Unable to Delete tickets, Please Again");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        
+
+        private void btn_DeleteAll_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                DialogResult dr = MessageBox.Show("Want to Delete All Ticket", "Delete All Tickets", MessageBoxButtons.YesNo, MessageBoxIcon.Information); string query = "truncate table Passenger_table ";
+
+                if (dr == DialogResult.Yes)
+                {
+                    string query2 = "truncate table Passenger_table"; 
+                    SqlCommand command = new SqlCommand(query2);
+
+                    int Rows = 123;// random beacuse truncate would return -1
+                    Rows = dBAccess.ExecuteQuery(command);
+
+                    if (Rows == -1)
+                    {
+                        MessageBox.Show("All Tickets deleted Successfully");
+                        Refresh_dataGrid_Open_tkts();
+
+                    }
+                    else MessageBox.Show("Unable to Delete tickets, Please Again");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        
     }
 }
