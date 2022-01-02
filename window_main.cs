@@ -15,6 +15,7 @@ namespace E_Ticket_Pro_472
         DBAccess dBAccess = new DBAccess();
      public   DataTable dt_bank_details = new DataTable();
      public DataTable dt_ID_deatails = new DataTable();
+      public  window_new_Ticket win_new_ticket; 
         public window_main()
         {
             InitializeComponent();
@@ -52,7 +53,7 @@ namespace E_Ticket_Pro_472
 
         private void newTicketToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            window_new_Ticket win_new_ticket = new window_new_Ticket();
+             win_new_ticket = new window_new_Ticket();
             win_new_ticket.Show();
         }
 
@@ -65,6 +66,12 @@ namespace E_Ticket_Pro_472
         public void window_main_Load(object sender, EventArgs e)
         {
             //Retrive data for bank details
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false; this.MinimizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+
+
             string query1 = "select * from Bank_table";
           
             dBAccess.ReadDataThroughAdapter(query1, dt_bank_details);
@@ -82,13 +89,17 @@ namespace E_Ticket_Pro_472
 
         }
 
-        private void openTicketToolStripMenuItem_Click(object sender, EventArgs e)
+        public void openTicketToolStripMenuItem_Click(object sender, EventArgs e)
         {
             window_Open_Ticket win_open_Ticket = new window_Open_Ticket();
             win_open_Ticket.Show();
 
         }
 
+        public void Refresh_datadrid_open_tkt()
+        {
+           
+        }
         private void howToUseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             How_to_use h2u = new How_to_use();
@@ -103,6 +114,32 @@ namespace E_Ticket_Pro_472
         private void pNRStatusToolStripMenuItem_Click(object sender, EventArgs e)
         {
           
+        }
+        Test_Selenium kk = null;
+        private async void btn_Normal_Login_Click(object sender, EventArgs e)
+        {
+             kk = new Test_Selenium(this);
+            await kk.setup_start();
+            await kk.Login_irctc();
+           
+           
+
+
+        }
+
+        private void Captcha_box_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void btn_capcha_submit_Click(object sender, EventArgs e)
+        {
+            string CAP=textBox_capchaText.Text;
+
+             await kk.Find_Trains(CAP); 
+             await kk.get_Book_now();  lbl_YourLicenceValidity.Text = "Sumbitming Passenger - 1";
+             await kk.Fill_Passenger_Details(); lbl_YourLicenceValidity.Text = "Sumbitming Passenger - 0";
+            await kk.Going_To_bank();
         }
     }
 }

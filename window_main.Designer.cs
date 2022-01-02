@@ -53,6 +53,11 @@ namespace E_Ticket_Pro_472
             this.panel_Travel_Details = new System.Windows.Forms.Panel();
             this.panel_NoForm_Loaded_Top = new System.Windows.Forms.Panel();
             this.lbl_No_Form_Loaded = new System.Windows.Forms.Label();
+            this.panel_Capcha = new System.Windows.Forms.Panel();
+            this.textBox_capchaText = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btn_capcha_submit = new System.Windows.Forms.Button();
+            this.Captcha_box = new System.Windows.Forms.PictureBox();
             this.lbl_from = new System.Windows.Forms.Label();
             this.lbl_DOJ = new System.Windows.Forms.Label();
             this.lbl_Class = new System.Windows.Forms.Label();
@@ -74,6 +79,8 @@ namespace E_Ticket_Pro_472
             this.panel_LicenceValidity.SuspendLayout();
             this.panel_Travel_Details.SuspendLayout();
             this.panel_NoForm_Loaded_Top.SuspendLayout();
+            this.panel_Capcha.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Captcha_box)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,7 +116,7 @@ namespace E_Ticket_Pro_472
             // addDeleteAddToolStripMenuItem
             // 
             this.addDeleteAddToolStripMenuItem.Name = "addDeleteAddToolStripMenuItem";
-            this.addDeleteAddToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addDeleteAddToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.addDeleteAddToolStripMenuItem.Text = "Add / Delete Add";
             this.addDeleteAddToolStripMenuItem.Click += new System.EventHandler(this.addDeleteAddToolStripMenuItem_Click);
             // 
@@ -126,7 +133,7 @@ namespace E_Ticket_Pro_472
             // addDeleteBankToolStripMenuItem
             // 
             this.addDeleteBankToolStripMenuItem.Name = "addDeleteBankToolStripMenuItem";
-            this.addDeleteBankToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addDeleteBankToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.addDeleteBankToolStripMenuItem.Text = "Add / Delete Bank";
             this.addDeleteBankToolStripMenuItem.Click += new System.EventHandler(this.addDeleteBankToolStripMenuItem_Click);
             // 
@@ -144,14 +151,14 @@ namespace E_Ticket_Pro_472
             // newTicketToolStripMenuItem
             // 
             this.newTicketToolStripMenuItem.Name = "newTicketToolStripMenuItem";
-            this.newTicketToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newTicketToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.newTicketToolStripMenuItem.Text = "New Ticket";
             this.newTicketToolStripMenuItem.Click += new System.EventHandler(this.newTicketToolStripMenuItem_Click);
             // 
             // openTicketToolStripMenuItem
             // 
             this.openTicketToolStripMenuItem.Name = "openTicketToolStripMenuItem";
-            this.openTicketToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openTicketToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.openTicketToolStripMenuItem.Text = "Open Ticket";
             this.openTicketToolStripMenuItem.Click += new System.EventHandler(this.openTicketToolStripMenuItem_Click);
             // 
@@ -169,7 +176,7 @@ namespace E_Ticket_Pro_472
             // 
             this.pNRStatusToolStripMenuItem.Enabled = false;
             this.pNRStatusToolStripMenuItem.Name = "pNRStatusToolStripMenuItem";
-            this.pNRStatusToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pNRStatusToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.pNRStatusToolStripMenuItem.Text = "PNR Status";
             this.pNRStatusToolStripMenuItem.Click += new System.EventHandler(this.pNRStatusToolStripMenuItem_Click);
             // 
@@ -186,13 +193,13 @@ namespace E_Ticket_Pro_472
             // howToUseToolStripMenuItem
             // 
             this.howToUseToolStripMenuItem.Name = "howToUseToolStripMenuItem";
-            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.howToUseToolStripMenuItem.Text = "How To Use";
             this.howToUseToolStripMenuItem.Click += new System.EventHandler(this.howToUseToolStripMenuItem_Click);
             // 
             // panel_LicenceValidity
             // 
-            this.panel_LicenceValidity.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel_LicenceValidity.BackColor = System.Drawing.Color.AntiqueWhite;
             this.panel_LicenceValidity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_LicenceValidity.Controls.Add(this.lbl_YourLicenceValidity);
             this.panel_LicenceValidity.ForeColor = System.Drawing.Color.Blue;
@@ -295,7 +302,7 @@ namespace E_Ticket_Pro_472
             this.panel_Travel_Details.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel_Travel_Details.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_Travel_Details.Controls.Add(this.panel_NoForm_Loaded_Top);
-            this.panel_Travel_Details.Controls.Add(this.label4);
+            this.panel_Travel_Details.Controls.Add(this.panel_Capcha);
             this.panel_Travel_Details.Controls.Add(this.label1);
             this.panel_Travel_Details.Controls.Add(this.lbl_from);
             this.panel_Travel_Details.Controls.Add(this.lbl_DOJ);
@@ -309,6 +316,7 @@ namespace E_Ticket_Pro_472
             this.panel_Travel_Details.Controls.Add(this.label6);
             this.panel_Travel_Details.Controls.Add(this.label5);
             this.panel_Travel_Details.Controls.Add(this.label7);
+            this.panel_Travel_Details.Controls.Add(this.label4);
             this.panel_Travel_Details.Location = new System.Drawing.Point(0, 61);
             this.panel_Travel_Details.Name = "panel_Travel_Details";
             this.panel_Travel_Details.Size = new System.Drawing.Size(303, 103);
@@ -319,7 +327,7 @@ namespace E_Ticket_Pro_472
             this.panel_NoForm_Loaded_Top.BackColor = System.Drawing.Color.Silver;
             this.panel_NoForm_Loaded_Top.Controls.Add(this.lbl_No_Form_Loaded);
             this.panel_NoForm_Loaded_Top.ForeColor = System.Drawing.Color.BlueViolet;
-            this.panel_NoForm_Loaded_Top.Location = new System.Drawing.Point(1, -1);
+            this.panel_NoForm_Loaded_Top.Location = new System.Drawing.Point(0, 0);
             this.panel_NoForm_Loaded_Top.Name = "panel_NoForm_Loaded_Top";
             this.panel_NoForm_Loaded_Top.Size = new System.Drawing.Size(303, 103);
             this.panel_NoForm_Loaded_Top.TabIndex = 4;
@@ -335,6 +343,61 @@ namespace E_Ticket_Pro_472
             this.lbl_No_Form_Loaded.TabIndex = 0;
             this.lbl_No_Form_Loaded.Text = "No Ticket Form Loaded Yet";
             this.lbl_No_Form_Loaded.Click += new System.EventHandler(this.lbl_No_Form_Loaded_Click);
+            // 
+            // panel_Capcha
+            // 
+            this.panel_Capcha.BackColor = System.Drawing.SystemColors.Info;
+            this.panel_Capcha.Controls.Add(this.textBox_capchaText);
+            this.panel_Capcha.Controls.Add(this.label8);
+            this.panel_Capcha.Controls.Add(this.btn_capcha_submit);
+            this.panel_Capcha.Controls.Add(this.Captcha_box);
+            this.panel_Capcha.Location = new System.Drawing.Point(0, 3);
+            this.panel_Capcha.Name = "panel_Capcha";
+            this.panel_Capcha.Size = new System.Drawing.Size(305, 100);
+            this.panel_Capcha.TabIndex = 4;
+            // 
+            // textBox_capchaText
+            // 
+            this.textBox_capchaText.BackColor = System.Drawing.Color.DarkSalmon;
+            this.textBox_capchaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_capchaText.Location = new System.Drawing.Point(69, 72);
+            this.textBox_capchaText.Multiline = true;
+            this.textBox_capchaText.Name = "textBox_capchaText";
+            this.textBox_capchaText.Size = new System.Drawing.Size(142, 28);
+            this.textBox_capchaText.TabIndex = 11;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(5, 82);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 13);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Capcha:-";
+            // 
+            // btn_capcha_submit
+            // 
+            this.btn_capcha_submit.BackColor = System.Drawing.Color.Sienna;
+            this.btn_capcha_submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_capcha_submit.Location = new System.Drawing.Point(217, 69);
+            this.btn_capcha_submit.Name = "btn_capcha_submit";
+            this.btn_capcha_submit.Size = new System.Drawing.Size(75, 34);
+            this.btn_capcha_submit.TabIndex = 2;
+            this.btn_capcha_submit.Text = "Submit";
+            this.btn_capcha_submit.UseVisualStyleBackColor = false;
+            this.btn_capcha_submit.Click += new System.EventHandler(this.btn_capcha_submit_Click);
+            // 
+            // Captcha_box
+            // 
+            this.Captcha_box.BackColor = System.Drawing.Color.White;
+            this.Captcha_box.Location = new System.Drawing.Point(0, -4);
+            this.Captcha_box.Name = "Captcha_box";
+            this.Captcha_box.Size = new System.Drawing.Size(304, 73);
+            this.Captcha_box.TabIndex = 1;
+            this.Captcha_box.TabStop = false;
+            this.Captcha_box.Click += new System.EventHandler(this.Captcha_box_Click);
             // 
             // lbl_from
             // 
@@ -487,6 +550,7 @@ namespace E_Ticket_Pro_472
             this.btn_Normal_Login.TabIndex = 6;
             this.btn_Normal_Login.Text = "Normal Login";
             this.btn_Normal_Login.UseVisualStyleBackColor = false;
+            this.btn_Normal_Login.Click += new System.EventHandler(this.btn_Normal_Login_Click);
             // 
             // linkLabel_News
             // 
@@ -545,7 +609,7 @@ namespace E_Ticket_Pro_472
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 315);
+            this.ClientSize = new System.Drawing.Size(304, 320);
             this.Controls.Add(this.btn_SeatCheck);
             this.Controls.Add(this.checkBox_WLStop);
             this.Controls.Add(this.linkLabel_Pair);
@@ -556,7 +620,7 @@ namespace E_Ticket_Pro_472
             this.Controls.Add(this.Main_Manu_Strip);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "window_main";
-            this.Text = "E - Ticket";
+            this.Text = "E-Ticket";
             this.Load += new System.EventHandler(this.window_main_Load);
             this.Main_Manu_Strip.ResumeLayout(false);
             this.Main_Manu_Strip.PerformLayout();
@@ -566,6 +630,9 @@ namespace E_Ticket_Pro_472
             this.panel_Travel_Details.PerformLayout();
             this.panel_NoForm_Loaded_Top.ResumeLayout(false);
             this.panel_NoForm_Loaded_Top.PerformLayout();
+            this.panel_Capcha.ResumeLayout(false);
+            this.panel_Capcha.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Captcha_box)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -585,8 +652,6 @@ namespace E_Ticket_Pro_472
         private System.Windows.Forms.ToolStripMenuItem newTicketToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openTicketToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem howToUseToolStripMenuItem;
-        private System.Windows.Forms.Panel panel_LicenceValidity;
-        private System.Windows.Forms.Label lbl_YourLicenceValidity;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -594,11 +659,9 @@ namespace E_Ticket_Pro_472
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel_Travel_Details;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.LinkLabel linkLabel_News;
         private System.Windows.Forms.LinkLabel linkLabel_Pair;
-        private System.Windows.Forms.Label lbl_No_Form_Loaded;
         private System.Windows.Forms.Button btn_SeatCheck;
         public System.Windows.Forms.ComboBox comboBox_Slot_MainWindow;
         public System.Windows.Forms.ComboBox comboBox_ID_MainWindow;
@@ -615,6 +678,15 @@ namespace E_Ticket_Pro_472
         public System.Windows.Forms.CheckBox checkBox_WLStop;
         public System.Windows.Forms.Panel panel_NoForm_Loaded_Top;
         private System.Windows.Forms.ToolStripMenuItem pNRStatusToolStripMenuItem;
+        public System.Windows.Forms.Label lbl_YourLicenceValidity;
+        public System.Windows.Forms.PictureBox Captcha_box;
+        public System.Windows.Forms.Label lbl_No_Form_Loaded;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btn_capcha_submit;
+        public System.Windows.Forms.TextBox textBox_capchaText;
+        public System.Windows.Forms.Panel panel_Capcha;
+        public System.Windows.Forms.Panel panel_LicenceValidity;
+        public System.Windows.Forms.Panel panel_Travel_Details;
     }
 }
 

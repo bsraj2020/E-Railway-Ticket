@@ -29,8 +29,8 @@ namespace E_Ticket_Pro_472
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -71,7 +71,7 @@ namespace E_Ticket_Pro_472
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(723, 12);
+            this.label7.Location = new System.Drawing.Point(728, 12);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 15);
             this.label7.TabIndex = 0;
@@ -81,7 +81,7 @@ namespace E_Ticket_Pro_472
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(626, 12);
+            this.label6.Location = new System.Drawing.Point(623, 12);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 15);
             this.label6.TabIndex = 0;
@@ -91,7 +91,7 @@ namespace E_Ticket_Pro_472
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(473, 12);
+            this.label5.Location = new System.Drawing.Point(472, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 15);
             this.label5.TabIndex = 0;
@@ -101,7 +101,7 @@ namespace E_Ticket_Pro_472
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(380, 12);
+            this.label4.Location = new System.Drawing.Point(389, 12);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(23, 15);
             this.label4.TabIndex = 0;
@@ -111,7 +111,7 @@ namespace E_Ticket_Pro_472
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(271, 12);
+            this.label3.Location = new System.Drawing.Point(289, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 15);
             this.label3.TabIndex = 0;
@@ -121,7 +121,7 @@ namespace E_Ticket_Pro_472
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(173, 12);
+            this.label2.Location = new System.Drawing.Point(189, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 15);
             this.label2.TabIndex = 0;
@@ -139,23 +139,24 @@ namespace E_Ticket_Pro_472
             // 
             // dataGridView_All_Tickets
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridView_All_Tickets.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView_All_Tickets.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView_All_Tickets.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_All_Tickets.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_All_Tickets.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView_All_Tickets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_All_Tickets.Location = new System.Drawing.Point(0, 75);
             this.dataGridView_All_Tickets.Name = "dataGridView_All_Tickets";
             this.dataGridView_All_Tickets.ReadOnly = true;
             this.dataGridView_All_Tickets.Size = new System.Drawing.Size(801, 265);
             this.dataGridView_All_Tickets.TabIndex = 1;
+            this.dataGridView_All_Tickets.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_All_Tickets_CellContentClick);
             // 
             // label8
             // 
@@ -240,6 +241,7 @@ namespace E_Ticket_Pro_472
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.btn_DeleteAll);

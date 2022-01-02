@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data.SQLite;
 
 namespace E_Ticket_Pro_472
 {
@@ -26,13 +27,13 @@ namespace E_Ticket_Pro_472
 
         private void btn_save_netbank_Click(object sender, EventArgs e)
         {
-            if (textBox_bank_username.Text == "") MessageBox.Show("Please enter Username");
-            else if(textBox_bank_password.Text=="") MessageBox.Show("Please enter Password");
+            if (textBox_bank_username.Text == "") MessageBox.Show("Please enter Username") ;
+            else if(textBox_bank_password.Text=="") MessageBox.Show("Please enter Password") ;
             else
             {
                 try
                 {
-                    SqlCommand insertcommand = new SqlCommand("insert into Bank_table(Gatewaytype,UPI_id,Username,Password) values(@gateway,@upi_id,@username,@password) ");
+                    SQLiteCommand insertcommand = new SQLiteCommand("insert into Bank_table(Gatewaytype,UPI_id,Username,Password) values(@gateway,@upi_id,@username,@password) ");
 
                     insertcommand.Parameters.AddWithValue("@gateway", comboBox_SelectPaymentGateway.Text);
                     insertcommand.Parameters.AddWithValue("@upi_id", textBox_UPI_id.Text);
@@ -67,7 +68,7 @@ namespace E_Ticket_Pro_472
             {
                 try
                 {
-                    SqlCommand insertcommand = new SqlCommand("insert into Bank_table(Gatewaytype,UPI_id,Username,Password) values(@gateway,@upi_id,@username,@password) ");
+                    SQLiteCommand insertcommand = new SQLiteCommand("insert into Bank_table(Gatewaytype,UPI_id,Username,Password) values(@gateway,@upi_id,@username,@password) ");
 
                     insertcommand.Parameters.AddWithValue("@gateway", comboBox_SelectPaymentGateway.Text);
                     insertcommand.Parameters.AddWithValue("@upi_id", textBox_UPI_id.Text);
@@ -103,6 +104,10 @@ namespace E_Ticket_Pro_472
 
         private void window_Add_bank_Load(object sender, EventArgs e)
         {
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false; this.MinimizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+
             DataTable dt_bank = new DataTable();
             string query = "select Gatewaytype,UPI_id,Username,Password from Bank_table";
             dBAccess.ReadDataThroughAdapter(query, dt_bank);
@@ -136,7 +141,7 @@ namespace E_Ticket_Pro_472
                 DialogResult dl = MessageBox.Show("Want to delete selected Bank", "Delete Bank details", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (dl == DialogResult.Yes)
                 {
-                    SqlCommand command = new SqlCommand("delete from Bank_table where UPI_id ='" + comboBox_Bank_toDelete.Text + "' ");
+                    SQLiteCommand command = new SQLiteCommand("delete from Bank_table where UPI_id ='" + comboBox_Bank_toDelete.Text + "' ");
                     int rows = dBAccess.ExecuteQuery(command);
 
                     if (rows > 0)
@@ -164,7 +169,7 @@ namespace E_Ticket_Pro_472
                 DialogResult dl = MessageBox.Show("Want to delete All Bank Details", "Delete Bank details", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (dl == DialogResult.Yes)
                 {
-                    SqlCommand command = new SqlCommand("truncate table Bank_table");
+                    SQLiteCommand command = new SQLiteCommand("truncate table Bank_table");
                     int rows = 123; //random beacuse for truncate it return -1 
                       rows = dBAccess.ExecuteQuery(command);
 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data.SQLite;
 
 namespace E_Ticket_Pro_472
 {
@@ -29,31 +30,32 @@ namespace E_Ticket_Pro_472
             dataGridView_All_Tickets.Columns["Quota"].DisplayIndex = 5;
             dataGridView_All_Tickets.Columns["Class"].DisplayIndex = 6;
 
+            dataGridView_All_Tickets.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            dataGridView_All_Tickets.BackgroundColor = Color.FromKnownColor(KnownColor.Control);
+            // dataGridView_All_Tickets.
             dataGridView_All_Tickets.ColumnHeadersVisible = false;
             int leftWidth = dataGridView_All_Tickets.Width - dataGridView_All_Tickets.RowHeadersWidth;
+            dataGridView_All_Tickets.DefaultCellStyle.BackColor=Color.FromKnownColor(KnownColor.Control);
 
             int totalColumns = dataGridView_All_Tickets.Columns.Count;
             for (int i=0;i< totalColumns; i++)
             {
                 dataGridView_All_Tickets.Columns[i].Width = leftWidth / totalColumns -1;
+                dataGridView_All_Tickets.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
         }
         private void window_Open_Ticket_Load(object sender, EventArgs e)
         {
-            DataTable dt_ticket_details = new DataTable();
-            string query = "select From_st,To_st,Date,Quota,Class,TrainNo,Ticket_Name from Passenger_table ";
-            dBAccess.ReadDataThroughAdapter(query, dt_ticket_details);
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false; this.MinimizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            //dataGridView_All_Tickets.BackgroundColor = Color.Black;
 
-            dataGridView_All_Tickets.DataSource = dt_ticket_details;
-
-            comboBox_SelectedTicket.DataSource = dt_ticket_details;
-            comboBox_SelectedTicket.DisplayMember = "Ticket_Name";
-            adjustColumn_order(); // for show in proper order
-
+            Refresh_dataGrid_Open_tkts();
 
 
         }
-        private void Refresh_dataGrid_Open_tkts()
+        public void Refresh_dataGrid_Open_tkts()
         {
             DataTable dt_ticket_details = new DataTable();
             string query = "select From_st,To_st,Date,Quota,Class,TrainNo,Ticket_Name from Passenger_table ";
@@ -63,6 +65,12 @@ namespace E_Ticket_Pro_472
 
             comboBox_SelectedTicket.DataSource = dt_ticket_details;
             comboBox_SelectedTicket.DisplayMember = "Ticket_Name";
+            int idx = 0;
+            foreach(DataGridViewRow row in dataGridView_All_Tickets.Rows)
+            {
+                row.DefaultCellStyle.BackColor = ++idx%2==0 ? Color.LightBlue:Color.LightGreen;
+            }
+
             adjustColumn_order(); // for show in proper order
         }
 
@@ -98,7 +106,7 @@ namespace E_Ticket_Pro_472
                 //fill old info
                 window_New_Ticket.textBox_From.Text = dt_Selected_ticket_details.Rows[0]["From_st"].ToString();
                     window_New_Ticket.textBox_To.Text = dt_Selected_ticket_details.Rows[0]["To_st"].ToString();
-               //     window_New_Ticket.dateTimePicker_new_ticket.Text = dt_Selected_ticket_details.Rows[0]["Date"].ToString();   
+                    window_New_Ticket.dateTimePicker_new_ticket.Text = dt_Selected_ticket_details.Rows[0]["Date"].ToString();   
                     window_New_Ticket.comboBox_Quota.Text = dt_Selected_ticket_details.Rows[0]["Quota"].ToString();
                     window_New_Ticket.comboBox_Class.Text = dt_Selected_ticket_details.Rows[0]["Class"].ToString();
                     window_New_Ticket.textBox_Boarding.Text = dt_Selected_ticket_details.Rows[0]["Board"].ToString();
@@ -169,7 +177,9 @@ namespace E_Ticket_Pro_472
         private void button_Open_Click(object sender, EventArgs e)
         {
             window_main window_Main = new window_main();
+            window_Main.lbl_No_Form_Loaded.Visible = false;
             window_Main.panel_NoForm_Loaded_Top.Visible = false;
+            window_Main.panel_Capcha.Visible = false;
            
 
             DataTable dt_ticket_details = new DataTable();
@@ -205,7 +215,7 @@ namespace E_Ticket_Pro_472
                 if (dr == DialogResult.Yes)
                 {
                     string query = "delete from Passenger_table where Ticket_Name = '" + comboBox_SelectedTicket.Text + "' ";
-                    SqlCommand command = new SqlCommand(query);
+                    SQLiteCommand command = new SQLiteCommand(query);
 
                     int Rows;// random beacuse truncate would return -1
                     Rows = dBAccess.ExecuteQuery(command);
@@ -237,8 +247,8 @@ namespace E_Ticket_Pro_472
 
                 if (dr == DialogResult.Yes)
                 {
-                    string query2 = "truncate table Passenger_table"; 
-                    SqlCommand command = new SqlCommand(query2);
+                    string query2 = "truncate table Passenger_table";
+                    SQLiteCommand command = new SQLiteCommand(query2);
 
                     int Rows = 123;// random beacuse truncate would return -1
                     Rows = dBAccess.ExecuteQuery(command);
@@ -258,6 +268,9 @@ namespace E_Ticket_Pro_472
             }
         }
 
-        
+        private void dataGridView_All_Tickets_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -194,6 +194,7 @@ namespace E_Ticket_Pro_472
             this.Controls.Add(this.label1);
             this.Name = "How_to_use";
             this.Text = "How to Use";
+            this.Load += new System.EventHandler(this.How_to_use_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

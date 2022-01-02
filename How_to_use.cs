@@ -23,5 +23,12 @@ namespace E_Ticket_Pro_472
         {
 
         }
+
+        private void How_to_use_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false; this.MinimizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+        }
     }
 }

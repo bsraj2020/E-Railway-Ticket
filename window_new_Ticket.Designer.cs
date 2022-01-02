@@ -46,52 +46,6 @@ namespace E_Ticket_Pro_472
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox_Passenger_Details = new System.Windows.Forms.GroupBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.checkBox_P6_Child = new System.Windows.Forms.CheckBox();
-            this.checkBox_P5_Child = new System.Windows.Forms.CheckBox();
-            this.checkBox_P4_Child = new System.Windows.Forms.CheckBox();
-            this.checkBox_P3_Child = new System.Windows.Forms.CheckBox();
-            this.checkBox_P2_Child = new System.Windows.Forms.CheckBox();
-            this.checkBox_P1_Child = new System.Windows.Forms.CheckBox();
-            this.checkBox_P6_Senior = new System.Windows.Forms.CheckBox();
-            this.checkBox_P5_Senior = new System.Windows.Forms.CheckBox();
-            this.checkBox_P4_Senior = new System.Windows.Forms.CheckBox();
-            this.checkBox_P3_Senior = new System.Windows.Forms.CheckBox();
-            this.checkBox_P2_Senior = new System.Windows.Forms.CheckBox();
-            this.checkBox_P1_Senior = new System.Windows.Forms.CheckBox();
-            this.comboBox_P6_Birth = new System.Windows.Forms.ComboBox();
-            this.comboBox_P5_Birth = new System.Windows.Forms.ComboBox();
-            this.comboBox_P4_Birth = new System.Windows.Forms.ComboBox();
-            this.comboBox_P3_Birth = new System.Windows.Forms.ComboBox();
-            this.comboBox_P2_Birth = new System.Windows.Forms.ComboBox();
-            this.comboBox_P1_Birth = new System.Windows.Forms.ComboBox();
-            this.comboBox_P6_Gender = new System.Windows.Forms.ComboBox();
-            this.comboBox_P5_Gender = new System.Windows.Forms.ComboBox();
-            this.comboBox_P4_Gender = new System.Windows.Forms.ComboBox();
-            this.comboBox_P3_Gender = new System.Windows.Forms.ComboBox();
-            this.comboBox_P2_Gender = new System.Windows.Forms.ComboBox();
-            this.comboBox_P1_Gender = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox_P6_Age = new System.Windows.Forms.TextBox();
-            this.textBox_P6_Name = new System.Windows.Forms.TextBox();
-            this.textBox_P5_Age = new System.Windows.Forms.TextBox();
-            this.textBox_P5_Name = new System.Windows.Forms.TextBox();
-            this.textBox_P4_Age = new System.Windows.Forms.TextBox();
-            this.textBox_P4_Name = new System.Windows.Forms.TextBox();
-            this.textBox_P3_Age = new System.Windows.Forms.TextBox();
-            this.textBox_P3_Name = new System.Windows.Forms.TextBox();
-            this.textBox_P2_Age = new System.Windows.Forms.TextBox();
-            this.textBox_P2_Name = new System.Windows.Forms.TextBox();
-            this.textBox_P1_Age = new System.Windows.Forms.TextBox();
-            this.textBox_P1_Name = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox_PTFare = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -105,9 +59,57 @@ namespace E_Ticket_Pro_472
             this.textBox_MobileNo = new System.Windows.Forms.TextBox();
             this.textBox_Ticket_name = new System.Windows.Forms.TextBox();
             this.comboBox_SlotNo = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox_P1_Name = new System.Windows.Forms.TextBox();
+            this.textBox_P1_Age = new System.Windows.Forms.TextBox();
+            this.textBox_P2_Name = new System.Windows.Forms.TextBox();
+            this.textBox_P2_Age = new System.Windows.Forms.TextBox();
+            this.textBox_P3_Name = new System.Windows.Forms.TextBox();
+            this.textBox_P3_Age = new System.Windows.Forms.TextBox();
+            this.textBox_P4_Name = new System.Windows.Forms.TextBox();
+            this.textBox_P4_Age = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBox_P1_Gender = new System.Windows.Forms.ComboBox();
+            this.comboBox_P2_Gender = new System.Windows.Forms.ComboBox();
+            this.comboBox_P3_Gender = new System.Windows.Forms.ComboBox();
+            this.comboBox_P4_Gender = new System.Windows.Forms.ComboBox();
+            this.comboBox_P1_Birth = new System.Windows.Forms.ComboBox();
+            this.comboBox_P2_Birth = new System.Windows.Forms.ComboBox();
+            this.comboBox_P3_Birth = new System.Windows.Forms.ComboBox();
+            this.comboBox_P4_Birth = new System.Windows.Forms.ComboBox();
+            this.checkBox_P1_Senior = new System.Windows.Forms.CheckBox();
+            this.comboBox_P6_Birth = new System.Windows.Forms.ComboBox();
+            this.checkBox_P2_Senior = new System.Windows.Forms.CheckBox();
+            this.comboBox_P6_Gender = new System.Windows.Forms.ComboBox();
+            this.checkBox_P3_Senior = new System.Windows.Forms.CheckBox();
+            this.checkBox_P6_Senior = new System.Windows.Forms.CheckBox();
+            this.checkBox_P4_Senior = new System.Windows.Forms.CheckBox();
+            this.textBox_P6_Name = new System.Windows.Forms.TextBox();
+            this.checkBox_P1_Child = new System.Windows.Forms.CheckBox();
+            this.textBox_P6_Age = new System.Windows.Forms.TextBox();
+            this.checkBox_P2_Child = new System.Windows.Forms.CheckBox();
+            this.checkBox_P5_Senior = new System.Windows.Forms.CheckBox();
+            this.checkBox_P3_Child = new System.Windows.Forms.CheckBox();
+            this.checkBox_P5_Child = new System.Windows.Forms.CheckBox();
+            this.checkBox_P4_Child = new System.Windows.Forms.CheckBox();
+            this.comboBox_P5_Birth = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.checkBox_P6_Child = new System.Windows.Forms.CheckBox();
+            this.panel_PT_fare = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox_PTFare = new System.Windows.Forms.TextBox();
+            this.comboBox_P5_Gender = new System.Windows.Forms.ComboBox();
+            this.textBox_P5_Name = new System.Windows.Forms.TextBox();
+            this.textBox_P5_Age = new System.Windows.Forms.TextBox();
+            this.groupBox_Passenger_Details = new System.Windows.Forms.GroupBox();
             this.groupBox_PlanMyJourney.SuspendLayout();
-            this.groupBox_Passenger_Details.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel_PT_fare.SuspendLayout();
+            this.groupBox_Passenger_Details.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox_PlanMyJourney
@@ -145,11 +147,13 @@ namespace E_Ticket_Pro_472
             this.comboBox_Class.FormattingEnabled = true;
             this.comboBox_Class.Items.AddRange(new object[] {
             "SL",
-            "3AC",
+            "3A",
             "2S",
             "CC",
-            "2AC",
-            "1AC"});
+            "2A",
+            "1A",
+            "FC",
+            "3E"});
             this.comboBox_Class.Location = new System.Drawing.Point(273, 71);
             this.comboBox_Class.Name = "comboBox_Class";
             this.comboBox_Class.Size = new System.Drawing.Size(116, 23);
@@ -161,13 +165,15 @@ namespace E_Ticket_Pro_472
             this.comboBox_Quota.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Quota.FormattingEnabled = true;
             this.comboBox_Quota.Items.AddRange(new object[] {
-            "General",
+            "GN",
             "CK",
-            "PT"});
+            "PT",
+            "LD"});
             this.comboBox_Quota.Location = new System.Drawing.Point(76, 71);
             this.comboBox_Quota.Name = "comboBox_Quota";
             this.comboBox_Quota.Size = new System.Drawing.Size(111, 23);
             this.comboBox_Quota.TabIndex = 5;
+            this.comboBox_Quota.SelectedIndexChanged += new System.EventHandler(this.comboBox_Quota_SelectedIndexChanged);
             // 
             // btn_reset
             // 
@@ -178,10 +184,10 @@ namespace E_Ticket_Pro_472
             this.btn_reset.TabIndex = 31;
             this.btn_reset.Text = "Reset";
             this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Visible = false;
             // 
             // btn_search
             // 
-            this.btn_search.Enabled = false;
             this.btn_search.ForeColor = System.Drawing.Color.Black;
             this.btn_search.Location = new System.Drawing.Point(645, 26);
             this.btn_search.Name = "btn_search";
@@ -189,6 +195,7 @@ namespace E_Ticket_Pro_472
             this.btn_search.TabIndex = 4;
             this.btn_search.Text = "Search";
             this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // dateTimePicker_new_ticket
             // 
@@ -198,14 +205,15 @@ namespace E_Ticket_Pro_472
             this.dateTimePicker_new_ticket.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_new_ticket.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker_new_ticket.Location = new System.Drawing.Point(459, 34);
-            this.dateTimePicker_new_ticket.MinDate = new System.DateTime(2020, 5, 12, 0, 0, 0, 0);
+            this.dateTimePicker_new_ticket.MinDate = new System.DateTime(2021, 12, 2, 0, 0, 0, 0);
             this.dateTimePicker_new_ticket.Name = "dateTimePicker_new_ticket";
             this.dateTimePicker_new_ticket.Size = new System.Drawing.Size(139, 21);
             this.dateTimePicker_new_ticket.TabIndex = 3;
-            this.dateTimePicker_new_ticket.Value = new System.DateTime(2021, 5, 20, 0, 0, 0, 0);
+            this.dateTimePicker_new_ticket.Value = new System.DateTime(2021, 12, 2, 0, 0, 0, 0);
             // 
             // textBox_From
             // 
+            this.textBox_From.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox_From.Location = new System.Drawing.Point(70, 29);
             this.textBox_From.Multiline = true;
             this.textBox_From.Name = "textBox_From";
@@ -214,14 +222,17 @@ namespace E_Ticket_Pro_472
             // 
             // textBox_To
             // 
+            this.textBox_To.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox_To.Location = new System.Drawing.Point(226, 30);
             this.textBox_To.Multiline = true;
             this.textBox_To.Name = "textBox_To";
             this.textBox_To.Size = new System.Drawing.Size(88, 28);
             this.textBox_To.TabIndex = 2;
+            this.textBox_To.TextChanged += new System.EventHandler(this.textBox_To_TextChanged);
             // 
             // textBox_Boarding
             // 
+            this.textBox_Boarding.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox_Boarding.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Boarding.ForeColor = System.Drawing.Color.DarkRed;
             this.textBox_Boarding.Location = new System.Drawing.Point(471, 71);
@@ -232,6 +243,7 @@ namespace E_Ticket_Pro_472
             // 
             // textBox_TrainNo
             // 
+            this.textBox_TrainNo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox_TrainNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_TrainNo.Location = new System.Drawing.Point(696, 71);
             this.textBox_TrainNo.Multiline = true;
@@ -322,601 +334,6 @@ namespace E_Ticket_Pro_472
             this.label1.TabIndex = 0;
             this.label1.Text = "From :";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // groupBox_Passenger_Details
-            // 
-            this.groupBox_Passenger_Details.BackColor = System.Drawing.Color.Silver;
-            this.groupBox_Passenger_Details.Controls.Add(this.label19);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P6_Child);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P5_Child);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P4_Child);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P3_Child);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P2_Child);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P1_Child);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P6_Senior);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P5_Senior);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P4_Senior);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P3_Senior);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P2_Senior);
-            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P1_Senior);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P6_Birth);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P5_Birth);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P4_Birth);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P3_Birth);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P2_Birth);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P1_Birth);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P6_Gender);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P5_Gender);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P4_Gender);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P3_Gender);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P2_Gender);
-            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P1_Gender);
-            this.groupBox_Passenger_Details.Controls.Add(this.label14);
-            this.groupBox_Passenger_Details.Controls.Add(this.label13);
-            this.groupBox_Passenger_Details.Controls.Add(this.label12);
-            this.groupBox_Passenger_Details.Controls.Add(this.label11);
-            this.groupBox_Passenger_Details.Controls.Add(this.label10);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P6_Age);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P6_Name);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P5_Age);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P5_Name);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P4_Age);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P4_Name);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P3_Age);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P3_Name);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P2_Age);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P2_Name);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P1_Age);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P1_Name);
-            this.groupBox_Passenger_Details.Controls.Add(this.label9);
-            this.groupBox_Passenger_Details.Controls.Add(this.label8);
-            this.groupBox_Passenger_Details.Controls.Add(this.textBox_PTFare);
-            this.groupBox_Passenger_Details.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_Passenger_Details.ForeColor = System.Drawing.Color.OrangeRed;
-            this.groupBox_Passenger_Details.Location = new System.Drawing.Point(0, 127);
-            this.groupBox_Passenger_Details.Name = "groupBox_Passenger_Details";
-            this.groupBox_Passenger_Details.Size = new System.Drawing.Size(883, 260);
-            this.groupBox_Passenger_Details.TabIndex = 1;
-            this.groupBox_Passenger_Details.TabStop = false;
-            this.groupBox_Passenger_Details.Text = "Passenger Details :";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(-146, 539);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(36, 16);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Age";
-            this.label19.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // checkBox_P6_Child
-            // 
-            this.checkBox_P6_Child.AutoSize = true;
-            this.checkBox_P6_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P6_Child.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P6_Child.Location = new System.Drawing.Point(528, 227);
-            this.checkBox_P6_Child.Name = "checkBox_P6_Child";
-            this.checkBox_P6_Child.Size = new System.Drawing.Size(61, 20);
-            this.checkBox_P6_Child.TabIndex = 69;
-            this.checkBox_P6_Child.Text = "Y / N";
-            this.checkBox_P6_Child.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_P5_Child
-            // 
-            this.checkBox_P5_Child.AutoSize = true;
-            this.checkBox_P5_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P5_Child.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P5_Child.Location = new System.Drawing.Point(528, 193);
-            this.checkBox_P5_Child.Name = "checkBox_P5_Child";
-            this.checkBox_P5_Child.Size = new System.Drawing.Size(61, 20);
-            this.checkBox_P5_Child.TabIndex = 73;
-            this.checkBox_P5_Child.Text = "Y / N";
-            this.checkBox_P5_Child.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_P4_Child
-            // 
-            this.checkBox_P4_Child.AutoSize = true;
-            this.checkBox_P4_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P4_Child.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P4_Child.Location = new System.Drawing.Point(528, 159);
-            this.checkBox_P4_Child.Name = "checkBox_P4_Child";
-            this.checkBox_P4_Child.Size = new System.Drawing.Size(61, 20);
-            this.checkBox_P4_Child.TabIndex = 59;
-            this.checkBox_P4_Child.Text = "Y / N";
-            this.checkBox_P4_Child.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_P3_Child
-            // 
-            this.checkBox_P3_Child.AutoSize = true;
-            this.checkBox_P3_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P3_Child.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P3_Child.Location = new System.Drawing.Point(528, 125);
-            this.checkBox_P3_Child.Name = "checkBox_P3_Child";
-            this.checkBox_P3_Child.Size = new System.Drawing.Size(61, 20);
-            this.checkBox_P3_Child.TabIndex = 57;
-            this.checkBox_P3_Child.Text = "Y / N";
-            this.checkBox_P3_Child.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_P2_Child
-            // 
-            this.checkBox_P2_Child.AutoSize = true;
-            this.checkBox_P2_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P2_Child.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P2_Child.Location = new System.Drawing.Point(528, 91);
-            this.checkBox_P2_Child.Name = "checkBox_P2_Child";
-            this.checkBox_P2_Child.Size = new System.Drawing.Size(61, 20);
-            this.checkBox_P2_Child.TabIndex = 54;
-            this.checkBox_P2_Child.Text = "Y / N";
-            this.checkBox_P2_Child.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_P1_Child
-            // 
-            this.checkBox_P1_Child.AutoSize = true;
-            this.checkBox_P1_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P1_Child.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P1_Child.Location = new System.Drawing.Point(528, 57);
-            this.checkBox_P1_Child.Name = "checkBox_P1_Child";
-            this.checkBox_P1_Child.Size = new System.Drawing.Size(61, 20);
-            this.checkBox_P1_Child.TabIndex = 52;
-            this.checkBox_P1_Child.Text = "Y / N";
-            this.checkBox_P1_Child.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_P6_Senior
-            // 
-            this.checkBox_P6_Senior.AutoSize = true;
-            this.checkBox_P6_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P6_Senior.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P6_Senior.Location = new System.Drawing.Point(428, 227);
-            this.checkBox_P6_Senior.Name = "checkBox_P6_Senior";
-            this.checkBox_P6_Senior.Size = new System.Drawing.Size(72, 20);
-            this.checkBox_P6_Senior.TabIndex = 67;
-            this.checkBox_P6_Senior.Text = "Senior";
-            this.checkBox_P6_Senior.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_P5_Senior
-            // 
-            this.checkBox_P5_Senior.AutoSize = true;
-            this.checkBox_P5_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P5_Senior.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P5_Senior.Location = new System.Drawing.Point(428, 193);
-            this.checkBox_P5_Senior.Name = "checkBox_P5_Senior";
-            this.checkBox_P5_Senior.Size = new System.Drawing.Size(72, 20);
-            this.checkBox_P5_Senior.TabIndex = 61;
-            this.checkBox_P5_Senior.Text = "Senior";
-            this.checkBox_P5_Senior.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_P4_Senior
-            // 
-            this.checkBox_P4_Senior.AutoSize = true;
-            this.checkBox_P4_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P4_Senior.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P4_Senior.Location = new System.Drawing.Point(428, 159);
-            this.checkBox_P4_Senior.Name = "checkBox_P4_Senior";
-            this.checkBox_P4_Senior.Size = new System.Drawing.Size(72, 20);
-            this.checkBox_P4_Senior.TabIndex = 58;
-            this.checkBox_P4_Senior.Text = "Senior";
-            this.checkBox_P4_Senior.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_P3_Senior
-            // 
-            this.checkBox_P3_Senior.AutoSize = true;
-            this.checkBox_P3_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P3_Senior.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P3_Senior.Location = new System.Drawing.Point(428, 125);
-            this.checkBox_P3_Senior.Name = "checkBox_P3_Senior";
-            this.checkBox_P3_Senior.Size = new System.Drawing.Size(72, 20);
-            this.checkBox_P3_Senior.TabIndex = 56;
-            this.checkBox_P3_Senior.Text = "Senior";
-            this.checkBox_P3_Senior.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_P2_Senior
-            // 
-            this.checkBox_P2_Senior.AutoSize = true;
-            this.checkBox_P2_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P2_Senior.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P2_Senior.Location = new System.Drawing.Point(428, 91);
-            this.checkBox_P2_Senior.Name = "checkBox_P2_Senior";
-            this.checkBox_P2_Senior.Size = new System.Drawing.Size(72, 20);
-            this.checkBox_P2_Senior.TabIndex = 53;
-            this.checkBox_P2_Senior.Text = "Senior";
-            this.checkBox_P2_Senior.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_P1_Senior
-            // 
-            this.checkBox_P1_Senior.AutoSize = true;
-            this.checkBox_P1_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_P1_Senior.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_P1_Senior.Location = new System.Drawing.Point(428, 57);
-            this.checkBox_P1_Senior.Name = "checkBox_P1_Senior";
-            this.checkBox_P1_Senior.Size = new System.Drawing.Size(72, 20);
-            this.checkBox_P1_Senior.TabIndex = 51;
-            this.checkBox_P1_Senior.Text = "Senior";
-            this.checkBox_P1_Senior.UseVisualStyleBackColor = true;
-            // 
-            // comboBox_P6_Birth
-            // 
-            this.comboBox_P6_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P6_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P6_Birth.FormattingEnabled = true;
-            this.comboBox_P6_Birth.ItemHeight = 15;
-            this.comboBox_P6_Birth.Items.AddRange(new object[] {
-            "Lower",
-            "Middle",
-            "Upper",
-            "S Lower",
-            "S Upper"});
-            this.comboBox_P6_Birth.Location = new System.Drawing.Point(329, 222);
-            this.comboBox_P6_Birth.Name = "comboBox_P6_Birth";
-            this.comboBox_P6_Birth.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P6_Birth.TabIndex = 32;
-            // 
-            // comboBox_P5_Birth
-            // 
-            this.comboBox_P5_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P5_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P5_Birth.FormattingEnabled = true;
-            this.comboBox_P5_Birth.ItemHeight = 15;
-            this.comboBox_P5_Birth.Items.AddRange(new object[] {
-            "Lower",
-            "Middle",
-            "Upper",
-            "S Lower",
-            "S Upper"});
-            this.comboBox_P5_Birth.Location = new System.Drawing.Point(329, 188);
-            this.comboBox_P5_Birth.Name = "comboBox_P5_Birth";
-            this.comboBox_P5_Birth.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P5_Birth.TabIndex = 28;
-            // 
-            // comboBox_P4_Birth
-            // 
-            this.comboBox_P4_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P4_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P4_Birth.FormattingEnabled = true;
-            this.comboBox_P4_Birth.ItemHeight = 15;
-            this.comboBox_P4_Birth.Items.AddRange(new object[] {
-            "Lower",
-            "Middle",
-            "Upper",
-            "S Lower",
-            "S Upper"});
-            this.comboBox_P4_Birth.Location = new System.Drawing.Point(329, 154);
-            this.comboBox_P4_Birth.Name = "comboBox_P4_Birth";
-            this.comboBox_P4_Birth.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P4_Birth.TabIndex = 24;
-            // 
-            // comboBox_P3_Birth
-            // 
-            this.comboBox_P3_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P3_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P3_Birth.FormattingEnabled = true;
-            this.comboBox_P3_Birth.ItemHeight = 15;
-            this.comboBox_P3_Birth.Items.AddRange(new object[] {
-            "Lower",
-            "Middle",
-            "Upper",
-            "S Lower",
-            "S Upper"});
-            this.comboBox_P3_Birth.Location = new System.Drawing.Point(329, 120);
-            this.comboBox_P3_Birth.Name = "comboBox_P3_Birth";
-            this.comboBox_P3_Birth.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P3_Birth.TabIndex = 20;
-            // 
-            // comboBox_P2_Birth
-            // 
-            this.comboBox_P2_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P2_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P2_Birth.FormattingEnabled = true;
-            this.comboBox_P2_Birth.ItemHeight = 15;
-            this.comboBox_P2_Birth.Items.AddRange(new object[] {
-            "Lower",
-            "Middle",
-            "Upper",
-            "S Lower",
-            "S Upper"});
-            this.comboBox_P2_Birth.Location = new System.Drawing.Point(329, 86);
-            this.comboBox_P2_Birth.Name = "comboBox_P2_Birth";
-            this.comboBox_P2_Birth.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P2_Birth.TabIndex = 16;
-            // 
-            // comboBox_P1_Birth
-            // 
-            this.comboBox_P1_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P1_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P1_Birth.FormattingEnabled = true;
-            this.comboBox_P1_Birth.ItemHeight = 15;
-            this.comboBox_P1_Birth.Items.AddRange(new object[] {
-            "Lower",
-            "Middle",
-            "Upper",
-            "S Lower",
-            "S Upper"});
-            this.comboBox_P1_Birth.Location = new System.Drawing.Point(329, 52);
-            this.comboBox_P1_Birth.Name = "comboBox_P1_Birth";
-            this.comboBox_P1_Birth.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P1_Birth.TabIndex = 12;
-            this.comboBox_P1_Birth.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
-            // 
-            // comboBox_P6_Gender
-            // 
-            this.comboBox_P6_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P6_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P6_Gender.FormattingEnabled = true;
-            this.comboBox_P6_Gender.ItemHeight = 15;
-            this.comboBox_P6_Gender.Items.AddRange(new object[] {
-            "M",
-            "F"});
-            this.comboBox_P6_Gender.Location = new System.Drawing.Point(254, 222);
-            this.comboBox_P6_Gender.Name = "comboBox_P6_Gender";
-            this.comboBox_P6_Gender.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P6_Gender.TabIndex = 31;
-            // 
-            // comboBox_P5_Gender
-            // 
-            this.comboBox_P5_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P5_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P5_Gender.FormattingEnabled = true;
-            this.comboBox_P5_Gender.ItemHeight = 15;
-            this.comboBox_P5_Gender.Items.AddRange(new object[] {
-            "M",
-            "F"});
-            this.comboBox_P5_Gender.Location = new System.Drawing.Point(254, 188);
-            this.comboBox_P5_Gender.Name = "comboBox_P5_Gender";
-            this.comboBox_P5_Gender.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P5_Gender.TabIndex = 27;
-            // 
-            // comboBox_P4_Gender
-            // 
-            this.comboBox_P4_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P4_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P4_Gender.FormattingEnabled = true;
-            this.comboBox_P4_Gender.ItemHeight = 15;
-            this.comboBox_P4_Gender.Items.AddRange(new object[] {
-            "M",
-            "F"});
-            this.comboBox_P4_Gender.Location = new System.Drawing.Point(254, 154);
-            this.comboBox_P4_Gender.Name = "comboBox_P4_Gender";
-            this.comboBox_P4_Gender.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P4_Gender.TabIndex = 23;
-            // 
-            // comboBox_P3_Gender
-            // 
-            this.comboBox_P3_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P3_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P3_Gender.FormattingEnabled = true;
-            this.comboBox_P3_Gender.ItemHeight = 15;
-            this.comboBox_P3_Gender.Items.AddRange(new object[] {
-            "M",
-            "F"});
-            this.comboBox_P3_Gender.Location = new System.Drawing.Point(254, 120);
-            this.comboBox_P3_Gender.Name = "comboBox_P3_Gender";
-            this.comboBox_P3_Gender.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P3_Gender.TabIndex = 19;
-            // 
-            // comboBox_P2_Gender
-            // 
-            this.comboBox_P2_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P2_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P2_Gender.FormattingEnabled = true;
-            this.comboBox_P2_Gender.ItemHeight = 15;
-            this.comboBox_P2_Gender.Items.AddRange(new object[] {
-            "M",
-            "F",
-            "\t"});
-            this.comboBox_P2_Gender.Location = new System.Drawing.Point(254, 86);
-            this.comboBox_P2_Gender.Name = "comboBox_P2_Gender";
-            this.comboBox_P2_Gender.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P2_Gender.TabIndex = 15;
-            // 
-            // comboBox_P1_Gender
-            // 
-            this.comboBox_P1_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_P1_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_P1_Gender.FormattingEnabled = true;
-            this.comboBox_P1_Gender.ItemHeight = 15;
-            this.comboBox_P1_Gender.Items.AddRange(new object[] {
-            "M",
-            "F"});
-            this.comboBox_P1_Gender.Location = new System.Drawing.Point(254, 52);
-            this.comboBox_P1_Gender.Name = "comboBox_P1_Gender";
-            this.comboBox_P1_Gender.Size = new System.Drawing.Size(60, 23);
-            this.comboBox_P1_Gender.TabIndex = 11;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(710, 22);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(72, 16);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "PT Fare :";
-            this.label14.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Gray;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(537, 22);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(43, 16);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Child";
-            this.label13.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Gray;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(425, 22);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 16);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "S Citizen";
-            this.label12.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Gray;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(346, 22);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(43, 16);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Birth ";
-            this.label11.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Gray;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(255, 22);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(59, 16);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Gender";
-            this.label10.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // textBox_P6_Age
-            // 
-            this.textBox_P6_Age.Location = new System.Drawing.Point(191, 222);
-            this.textBox_P6_Age.Multiline = true;
-            this.textBox_P6_Age.Name = "textBox_P6_Age";
-            this.textBox_P6_Age.Size = new System.Drawing.Size(43, 28);
-            this.textBox_P6_Age.TabIndex = 30;
-            // 
-            // textBox_P6_Name
-            // 
-            this.textBox_P6_Name.Location = new System.Drawing.Point(16, 222);
-            this.textBox_P6_Name.Multiline = true;
-            this.textBox_P6_Name.Name = "textBox_P6_Name";
-            this.textBox_P6_Name.Size = new System.Drawing.Size(148, 28);
-            this.textBox_P6_Name.TabIndex = 29;
-            // 
-            // textBox_P5_Age
-            // 
-            this.textBox_P5_Age.Location = new System.Drawing.Point(191, 188);
-            this.textBox_P5_Age.Multiline = true;
-            this.textBox_P5_Age.Name = "textBox_P5_Age";
-            this.textBox_P5_Age.Size = new System.Drawing.Size(43, 28);
-            this.textBox_P5_Age.TabIndex = 26;
-            // 
-            // textBox_P5_Name
-            // 
-            this.textBox_P5_Name.Location = new System.Drawing.Point(16, 188);
-            this.textBox_P5_Name.Multiline = true;
-            this.textBox_P5_Name.Name = "textBox_P5_Name";
-            this.textBox_P5_Name.Size = new System.Drawing.Size(148, 28);
-            this.textBox_P5_Name.TabIndex = 25;
-            // 
-            // textBox_P4_Age
-            // 
-            this.textBox_P4_Age.Location = new System.Drawing.Point(191, 154);
-            this.textBox_P4_Age.Multiline = true;
-            this.textBox_P4_Age.Name = "textBox_P4_Age";
-            this.textBox_P4_Age.Size = new System.Drawing.Size(43, 28);
-            this.textBox_P4_Age.TabIndex = 22;
-            // 
-            // textBox_P4_Name
-            // 
-            this.textBox_P4_Name.Location = new System.Drawing.Point(16, 154);
-            this.textBox_P4_Name.Multiline = true;
-            this.textBox_P4_Name.Name = "textBox_P4_Name";
-            this.textBox_P4_Name.Size = new System.Drawing.Size(148, 28);
-            this.textBox_P4_Name.TabIndex = 21;
-            // 
-            // textBox_P3_Age
-            // 
-            this.textBox_P3_Age.Location = new System.Drawing.Point(191, 120);
-            this.textBox_P3_Age.Multiline = true;
-            this.textBox_P3_Age.Name = "textBox_P3_Age";
-            this.textBox_P3_Age.Size = new System.Drawing.Size(43, 28);
-            this.textBox_P3_Age.TabIndex = 18;
-            // 
-            // textBox_P3_Name
-            // 
-            this.textBox_P3_Name.Location = new System.Drawing.Point(16, 120);
-            this.textBox_P3_Name.Multiline = true;
-            this.textBox_P3_Name.Name = "textBox_P3_Name";
-            this.textBox_P3_Name.Size = new System.Drawing.Size(148, 28);
-            this.textBox_P3_Name.TabIndex = 17;
-            // 
-            // textBox_P2_Age
-            // 
-            this.textBox_P2_Age.Location = new System.Drawing.Point(191, 86);
-            this.textBox_P2_Age.Multiline = true;
-            this.textBox_P2_Age.Name = "textBox_P2_Age";
-            this.textBox_P2_Age.Size = new System.Drawing.Size(43, 28);
-            this.textBox_P2_Age.TabIndex = 14;
-            // 
-            // textBox_P2_Name
-            // 
-            this.textBox_P2_Name.Location = new System.Drawing.Point(16, 86);
-            this.textBox_P2_Name.Multiline = true;
-            this.textBox_P2_Name.Name = "textBox_P2_Name";
-            this.textBox_P2_Name.Size = new System.Drawing.Size(148, 28);
-            this.textBox_P2_Name.TabIndex = 13;
-            // 
-            // textBox_P1_Age
-            // 
-            this.textBox_P1_Age.Location = new System.Drawing.Point(191, 52);
-            this.textBox_P1_Age.Multiline = true;
-            this.textBox_P1_Age.Name = "textBox_P1_Age";
-            this.textBox_P1_Age.Size = new System.Drawing.Size(43, 28);
-            this.textBox_P1_Age.TabIndex = 10;
-            // 
-            // textBox_P1_Name
-            // 
-            this.textBox_P1_Name.Location = new System.Drawing.Point(16, 52);
-            this.textBox_P1_Name.Multiline = true;
-            this.textBox_P1_Name.Name = "textBox_P1_Name";
-            this.textBox_P1_Name.Size = new System.Drawing.Size(148, 28);
-            this.textBox_P1_Name.TabIndex = 9;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Gray;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(198, 22);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 16);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Age";
-            this.label9.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Gray;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(19, 22);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 16);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Passeger Name";
-            this.label8.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // textBox_PTFare
-            // 
-            this.textBox_PTFare.Location = new System.Drawing.Point(787, 22);
-            this.textBox_PTFare.Multiline = true;
-            this.textBox_PTFare.Name = "textBox_PTFare";
-            this.textBox_PTFare.Size = new System.Drawing.Size(77, 20);
-            this.textBox_PTFare.TabIndex = 89;
             // 
             // groupBox1
             // 
@@ -1052,6 +469,7 @@ namespace E_Ticket_Pro_472
             // textBox_MobileNo
             // 
             this.textBox_MobileNo.Location = new System.Drawing.Point(672, 26);
+            this.textBox_MobileNo.MaxLength = 10;
             this.textBox_MobileNo.Multiline = true;
             this.textBox_MobileNo.Name = "textBox_MobileNo";
             this.textBox_MobileNo.Size = new System.Drawing.Size(147, 23);
@@ -1059,10 +477,12 @@ namespace E_Ticket_Pro_472
             // 
             // textBox_Ticket_name
             // 
+            this.textBox_Ticket_name.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox_Ticket_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Ticket_name.Location = new System.Drawing.Point(462, 69);
             this.textBox_Ticket_name.Multiline = true;
             this.textBox_Ticket_name.Name = "textBox_Ticket_name";
-            this.textBox_Ticket_name.Size = new System.Drawing.Size(136, 28);
+            this.textBox_Ticket_name.Size = new System.Drawing.Size(172, 28);
             this.textBox_Ticket_name.TabIndex = 37;
             // 
             // comboBox_SlotNo
@@ -1071,6 +491,7 @@ namespace E_Ticket_Pro_472
             this.comboBox_SlotNo.FormattingEnabled = true;
             this.comboBox_SlotNo.ItemHeight = 18;
             this.comboBox_SlotNo.Items.AddRange(new object[] {
+            "Auto",
             "1",
             "2",
             "3",
@@ -1080,6 +501,637 @@ namespace E_Ticket_Pro_472
             this.comboBox_SlotNo.Size = new System.Drawing.Size(60, 26);
             this.comboBox_SlotNo.TabIndex = 34;
             this.comboBox_SlotNo.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Gray;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(19, 22);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(120, 16);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Passeger Name";
+            this.label8.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Gray;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(198, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(36, 16);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Age";
+            this.label9.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBox_P1_Name
+            // 
+            this.textBox_P1_Name.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox_P1_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P1_Name.Location = new System.Drawing.Point(16, 52);
+            this.textBox_P1_Name.Multiline = true;
+            this.textBox_P1_Name.Name = "textBox_P1_Name";
+            this.textBox_P1_Name.Size = new System.Drawing.Size(148, 28);
+            this.textBox_P1_Name.TabIndex = 9;
+            // 
+            // textBox_P1_Age
+            // 
+            this.textBox_P1_Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P1_Age.Location = new System.Drawing.Point(191, 52);
+            this.textBox_P1_Age.Multiline = true;
+            this.textBox_P1_Age.Name = "textBox_P1_Age";
+            this.textBox_P1_Age.Size = new System.Drawing.Size(43, 28);
+            this.textBox_P1_Age.TabIndex = 10;
+            // 
+            // textBox_P2_Name
+            // 
+            this.textBox_P2_Name.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox_P2_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P2_Name.Location = new System.Drawing.Point(16, 86);
+            this.textBox_P2_Name.Multiline = true;
+            this.textBox_P2_Name.Name = "textBox_P2_Name";
+            this.textBox_P2_Name.Size = new System.Drawing.Size(148, 28);
+            this.textBox_P2_Name.TabIndex = 13;
+            // 
+            // textBox_P2_Age
+            // 
+            this.textBox_P2_Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P2_Age.Location = new System.Drawing.Point(191, 86);
+            this.textBox_P2_Age.Multiline = true;
+            this.textBox_P2_Age.Name = "textBox_P2_Age";
+            this.textBox_P2_Age.Size = new System.Drawing.Size(43, 28);
+            this.textBox_P2_Age.TabIndex = 14;
+            // 
+            // textBox_P3_Name
+            // 
+            this.textBox_P3_Name.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox_P3_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P3_Name.Location = new System.Drawing.Point(16, 120);
+            this.textBox_P3_Name.Multiline = true;
+            this.textBox_P3_Name.Name = "textBox_P3_Name";
+            this.textBox_P3_Name.Size = new System.Drawing.Size(148, 28);
+            this.textBox_P3_Name.TabIndex = 17;
+            // 
+            // textBox_P3_Age
+            // 
+            this.textBox_P3_Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P3_Age.Location = new System.Drawing.Point(191, 120);
+            this.textBox_P3_Age.Multiline = true;
+            this.textBox_P3_Age.Name = "textBox_P3_Age";
+            this.textBox_P3_Age.Size = new System.Drawing.Size(43, 28);
+            this.textBox_P3_Age.TabIndex = 18;
+            // 
+            // textBox_P4_Name
+            // 
+            this.textBox_P4_Name.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox_P4_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P4_Name.Location = new System.Drawing.Point(16, 154);
+            this.textBox_P4_Name.Multiline = true;
+            this.textBox_P4_Name.Name = "textBox_P4_Name";
+            this.textBox_P4_Name.Size = new System.Drawing.Size(148, 28);
+            this.textBox_P4_Name.TabIndex = 21;
+            // 
+            // textBox_P4_Age
+            // 
+            this.textBox_P4_Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P4_Age.Location = new System.Drawing.Point(191, 154);
+            this.textBox_P4_Age.Multiline = true;
+            this.textBox_P4_Age.Name = "textBox_P4_Age";
+            this.textBox_P4_Age.Size = new System.Drawing.Size(43, 28);
+            this.textBox_P4_Age.TabIndex = 22;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Gray;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(255, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(59, 16);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Gender";
+            this.label10.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Gray;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(346, 22);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(43, 16);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Birth ";
+            this.label11.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Gray;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(425, 22);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(68, 16);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "S Citizen";
+            this.label12.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Gray;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(537, 22);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 16);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Child";
+            this.label13.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // comboBox_P1_Gender
+            // 
+            this.comboBox_P1_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P1_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P1_Gender.FormattingEnabled = true;
+            this.comboBox_P1_Gender.ItemHeight = 15;
+            this.comboBox_P1_Gender.Items.AddRange(new object[] {
+            "M",
+            "F",
+            "select"});
+            this.comboBox_P1_Gender.Location = new System.Drawing.Point(254, 52);
+            this.comboBox_P1_Gender.Name = "comboBox_P1_Gender";
+            this.comboBox_P1_Gender.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P1_Gender.TabIndex = 11;
+            // 
+            // comboBox_P2_Gender
+            // 
+            this.comboBox_P2_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P2_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P2_Gender.FormattingEnabled = true;
+            this.comboBox_P2_Gender.ItemHeight = 15;
+            this.comboBox_P2_Gender.Items.AddRange(new object[] {
+            "M",
+            "F",
+            "select"});
+            this.comboBox_P2_Gender.Location = new System.Drawing.Point(254, 86);
+            this.comboBox_P2_Gender.Name = "comboBox_P2_Gender";
+            this.comboBox_P2_Gender.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P2_Gender.TabIndex = 15;
+            // 
+            // comboBox_P3_Gender
+            // 
+            this.comboBox_P3_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P3_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P3_Gender.FormattingEnabled = true;
+            this.comboBox_P3_Gender.ItemHeight = 15;
+            this.comboBox_P3_Gender.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.comboBox_P3_Gender.Location = new System.Drawing.Point(254, 120);
+            this.comboBox_P3_Gender.Name = "comboBox_P3_Gender";
+            this.comboBox_P3_Gender.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P3_Gender.TabIndex = 19;
+            // 
+            // comboBox_P4_Gender
+            // 
+            this.comboBox_P4_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P4_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P4_Gender.FormattingEnabled = true;
+            this.comboBox_P4_Gender.ItemHeight = 15;
+            this.comboBox_P4_Gender.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.comboBox_P4_Gender.Location = new System.Drawing.Point(254, 154);
+            this.comboBox_P4_Gender.Name = "comboBox_P4_Gender";
+            this.comboBox_P4_Gender.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P4_Gender.TabIndex = 23;
+            // 
+            // comboBox_P1_Birth
+            // 
+            this.comboBox_P1_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P1_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P1_Birth.FormattingEnabled = true;
+            this.comboBox_P1_Birth.ItemHeight = 15;
+            this.comboBox_P1_Birth.Items.AddRange(new object[] {
+            "LB",
+            "MB",
+            "UB",
+            "SL",
+            "SU",
+            "select"});
+            this.comboBox_P1_Birth.Location = new System.Drawing.Point(329, 52);
+            this.comboBox_P1_Birth.Name = "comboBox_P1_Birth";
+            this.comboBox_P1_Birth.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P1_Birth.TabIndex = 12;
+            this.comboBox_P1_Birth.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // comboBox_P2_Birth
+            // 
+            this.comboBox_P2_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P2_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P2_Birth.FormattingEnabled = true;
+            this.comboBox_P2_Birth.ItemHeight = 15;
+            this.comboBox_P2_Birth.Items.AddRange(new object[] {
+            "select",
+            "LB",
+            "MB",
+            "UB",
+            "SL",
+            "SU"});
+            this.comboBox_P2_Birth.Location = new System.Drawing.Point(329, 86);
+            this.comboBox_P2_Birth.Name = "comboBox_P2_Birth";
+            this.comboBox_P2_Birth.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P2_Birth.TabIndex = 16;
+            // 
+            // comboBox_P3_Birth
+            // 
+            this.comboBox_P3_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P3_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P3_Birth.FormattingEnabled = true;
+            this.comboBox_P3_Birth.ItemHeight = 15;
+            this.comboBox_P3_Birth.Items.AddRange(new object[] {
+            "LB",
+            "MB",
+            "UB",
+            "SL",
+            "SU",
+            "select"});
+            this.comboBox_P3_Birth.Location = new System.Drawing.Point(329, 120);
+            this.comboBox_P3_Birth.Name = "comboBox_P3_Birth";
+            this.comboBox_P3_Birth.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P3_Birth.TabIndex = 20;
+            // 
+            // comboBox_P4_Birth
+            // 
+            this.comboBox_P4_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P4_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P4_Birth.FormattingEnabled = true;
+            this.comboBox_P4_Birth.ItemHeight = 15;
+            this.comboBox_P4_Birth.Items.AddRange(new object[] {
+            "LB",
+            "MB",
+            "UB",
+            "SL",
+            "SU",
+            "select"});
+            this.comboBox_P4_Birth.Location = new System.Drawing.Point(329, 154);
+            this.comboBox_P4_Birth.Name = "comboBox_P4_Birth";
+            this.comboBox_P4_Birth.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P4_Birth.TabIndex = 24;
+            // 
+            // checkBox_P1_Senior
+            // 
+            this.checkBox_P1_Senior.AutoSize = true;
+            this.checkBox_P1_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P1_Senior.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P1_Senior.Location = new System.Drawing.Point(428, 57);
+            this.checkBox_P1_Senior.Name = "checkBox_P1_Senior";
+            this.checkBox_P1_Senior.Size = new System.Drawing.Size(72, 20);
+            this.checkBox_P1_Senior.TabIndex = 51;
+            this.checkBox_P1_Senior.Text = "Senior";
+            this.checkBox_P1_Senior.UseVisualStyleBackColor = true;
+            // 
+            // comboBox_P6_Birth
+            // 
+            this.comboBox_P6_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P6_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P6_Birth.FormattingEnabled = true;
+            this.comboBox_P6_Birth.ItemHeight = 15;
+            this.comboBox_P6_Birth.Items.AddRange(new object[] {
+            "Lower",
+            "Middle",
+            "Upper",
+            "S Lower",
+            "S Upper"});
+            this.comboBox_P6_Birth.Location = new System.Drawing.Point(329, 222);
+            this.comboBox_P6_Birth.Name = "comboBox_P6_Birth";
+            this.comboBox_P6_Birth.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P6_Birth.TabIndex = 32;
+            // 
+            // checkBox_P2_Senior
+            // 
+            this.checkBox_P2_Senior.AutoSize = true;
+            this.checkBox_P2_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P2_Senior.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P2_Senior.Location = new System.Drawing.Point(428, 91);
+            this.checkBox_P2_Senior.Name = "checkBox_P2_Senior";
+            this.checkBox_P2_Senior.Size = new System.Drawing.Size(72, 20);
+            this.checkBox_P2_Senior.TabIndex = 53;
+            this.checkBox_P2_Senior.Text = "Senior";
+            this.checkBox_P2_Senior.UseVisualStyleBackColor = true;
+            // 
+            // comboBox_P6_Gender
+            // 
+            this.comboBox_P6_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P6_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P6_Gender.FormattingEnabled = true;
+            this.comboBox_P6_Gender.ItemHeight = 15;
+            this.comboBox_P6_Gender.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.comboBox_P6_Gender.Location = new System.Drawing.Point(254, 222);
+            this.comboBox_P6_Gender.Name = "comboBox_P6_Gender";
+            this.comboBox_P6_Gender.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P6_Gender.TabIndex = 31;
+            // 
+            // checkBox_P3_Senior
+            // 
+            this.checkBox_P3_Senior.AutoSize = true;
+            this.checkBox_P3_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P3_Senior.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P3_Senior.Location = new System.Drawing.Point(428, 125);
+            this.checkBox_P3_Senior.Name = "checkBox_P3_Senior";
+            this.checkBox_P3_Senior.Size = new System.Drawing.Size(72, 20);
+            this.checkBox_P3_Senior.TabIndex = 56;
+            this.checkBox_P3_Senior.Text = "Senior";
+            this.checkBox_P3_Senior.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_P6_Senior
+            // 
+            this.checkBox_P6_Senior.AutoSize = true;
+            this.checkBox_P6_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P6_Senior.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P6_Senior.Location = new System.Drawing.Point(428, 227);
+            this.checkBox_P6_Senior.Name = "checkBox_P6_Senior";
+            this.checkBox_P6_Senior.Size = new System.Drawing.Size(72, 20);
+            this.checkBox_P6_Senior.TabIndex = 67;
+            this.checkBox_P6_Senior.Text = "Senior";
+            this.checkBox_P6_Senior.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_P4_Senior
+            // 
+            this.checkBox_P4_Senior.AutoSize = true;
+            this.checkBox_P4_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P4_Senior.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P4_Senior.Location = new System.Drawing.Point(428, 159);
+            this.checkBox_P4_Senior.Name = "checkBox_P4_Senior";
+            this.checkBox_P4_Senior.Size = new System.Drawing.Size(72, 20);
+            this.checkBox_P4_Senior.TabIndex = 58;
+            this.checkBox_P4_Senior.Text = "Senior";
+            this.checkBox_P4_Senior.UseVisualStyleBackColor = true;
+            // 
+            // textBox_P6_Name
+            // 
+            this.textBox_P6_Name.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox_P6_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P6_Name.Location = new System.Drawing.Point(16, 222);
+            this.textBox_P6_Name.Multiline = true;
+            this.textBox_P6_Name.Name = "textBox_P6_Name";
+            this.textBox_P6_Name.Size = new System.Drawing.Size(148, 28);
+            this.textBox_P6_Name.TabIndex = 29;
+            // 
+            // checkBox_P1_Child
+            // 
+            this.checkBox_P1_Child.AutoSize = true;
+            this.checkBox_P1_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P1_Child.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P1_Child.Location = new System.Drawing.Point(528, 57);
+            this.checkBox_P1_Child.Name = "checkBox_P1_Child";
+            this.checkBox_P1_Child.Size = new System.Drawing.Size(61, 20);
+            this.checkBox_P1_Child.TabIndex = 52;
+            this.checkBox_P1_Child.Text = "Y / N";
+            this.checkBox_P1_Child.UseVisualStyleBackColor = true;
+            // 
+            // textBox_P6_Age
+            // 
+            this.textBox_P6_Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P6_Age.Location = new System.Drawing.Point(191, 222);
+            this.textBox_P6_Age.Multiline = true;
+            this.textBox_P6_Age.Name = "textBox_P6_Age";
+            this.textBox_P6_Age.Size = new System.Drawing.Size(43, 28);
+            this.textBox_P6_Age.TabIndex = 30;
+            // 
+            // checkBox_P2_Child
+            // 
+            this.checkBox_P2_Child.AutoSize = true;
+            this.checkBox_P2_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P2_Child.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P2_Child.Location = new System.Drawing.Point(528, 91);
+            this.checkBox_P2_Child.Name = "checkBox_P2_Child";
+            this.checkBox_P2_Child.Size = new System.Drawing.Size(61, 20);
+            this.checkBox_P2_Child.TabIndex = 54;
+            this.checkBox_P2_Child.Text = "Y / N";
+            this.checkBox_P2_Child.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_P5_Senior
+            // 
+            this.checkBox_P5_Senior.AutoSize = true;
+            this.checkBox_P5_Senior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P5_Senior.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P5_Senior.Location = new System.Drawing.Point(428, 193);
+            this.checkBox_P5_Senior.Name = "checkBox_P5_Senior";
+            this.checkBox_P5_Senior.Size = new System.Drawing.Size(72, 20);
+            this.checkBox_P5_Senior.TabIndex = 61;
+            this.checkBox_P5_Senior.Text = "Senior";
+            this.checkBox_P5_Senior.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_P3_Child
+            // 
+            this.checkBox_P3_Child.AutoSize = true;
+            this.checkBox_P3_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P3_Child.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P3_Child.Location = new System.Drawing.Point(528, 125);
+            this.checkBox_P3_Child.Name = "checkBox_P3_Child";
+            this.checkBox_P3_Child.Size = new System.Drawing.Size(61, 20);
+            this.checkBox_P3_Child.TabIndex = 57;
+            this.checkBox_P3_Child.Text = "Y / N";
+            this.checkBox_P3_Child.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_P5_Child
+            // 
+            this.checkBox_P5_Child.AutoSize = true;
+            this.checkBox_P5_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P5_Child.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P5_Child.Location = new System.Drawing.Point(528, 193);
+            this.checkBox_P5_Child.Name = "checkBox_P5_Child";
+            this.checkBox_P5_Child.Size = new System.Drawing.Size(61, 20);
+            this.checkBox_P5_Child.TabIndex = 73;
+            this.checkBox_P5_Child.Text = "Y / N";
+            this.checkBox_P5_Child.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_P4_Child
+            // 
+            this.checkBox_P4_Child.AutoSize = true;
+            this.checkBox_P4_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P4_Child.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P4_Child.Location = new System.Drawing.Point(528, 159);
+            this.checkBox_P4_Child.Name = "checkBox_P4_Child";
+            this.checkBox_P4_Child.Size = new System.Drawing.Size(61, 20);
+            this.checkBox_P4_Child.TabIndex = 59;
+            this.checkBox_P4_Child.Text = "Y / N";
+            this.checkBox_P4_Child.UseVisualStyleBackColor = true;
+            // 
+            // comboBox_P5_Birth
+            // 
+            this.comboBox_P5_Birth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P5_Birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P5_Birth.FormattingEnabled = true;
+            this.comboBox_P5_Birth.ItemHeight = 15;
+            this.comboBox_P5_Birth.Items.AddRange(new object[] {
+            "LB",
+            "MB",
+            "UB",
+            "SL",
+            "SU",
+            "select"});
+            this.comboBox_P5_Birth.Location = new System.Drawing.Point(329, 188);
+            this.comboBox_P5_Birth.Name = "comboBox_P5_Birth";
+            this.comboBox_P5_Birth.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P5_Birth.TabIndex = 28;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(-146, 539);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(36, 16);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Age";
+            this.label19.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // checkBox_P6_Child
+            // 
+            this.checkBox_P6_Child.AutoSize = true;
+            this.checkBox_P6_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_P6_Child.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_P6_Child.Location = new System.Drawing.Point(528, 227);
+            this.checkBox_P6_Child.Name = "checkBox_P6_Child";
+            this.checkBox_P6_Child.Size = new System.Drawing.Size(61, 20);
+            this.checkBox_P6_Child.TabIndex = 69;
+            this.checkBox_P6_Child.Text = "Y / N";
+            this.checkBox_P6_Child.UseVisualStyleBackColor = true;
+            // 
+            // panel_PT_fare
+            // 
+            this.panel_PT_fare.BackColor = System.Drawing.Color.Linen;
+            this.panel_PT_fare.Controls.Add(this.label14);
+            this.panel_PT_fare.Controls.Add(this.textBox_PTFare);
+            this.panel_PT_fare.ForeColor = System.Drawing.Color.RosyBrown;
+            this.panel_PT_fare.Location = new System.Drawing.Point(664, 21);
+            this.panel_PT_fare.Name = "panel_PT_fare";
+            this.panel_PT_fare.Size = new System.Drawing.Size(200, 54);
+            this.panel_PT_fare.TabIndex = 90;
+            this.panel_PT_fare.Visible = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Peru;
+            this.label14.Location = new System.Drawing.Point(3, 17);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(72, 16);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "PT Fare :";
+            this.label14.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBox_PTFare
+            // 
+            this.textBox_PTFare.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_PTFare.Location = new System.Drawing.Point(84, 16);
+            this.textBox_PTFare.Multiline = true;
+            this.textBox_PTFare.Name = "textBox_PTFare";
+            this.textBox_PTFare.Size = new System.Drawing.Size(77, 20);
+            this.textBox_PTFare.TabIndex = 89;
+            // 
+            // comboBox_P5_Gender
+            // 
+            this.comboBox_P5_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_P5_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_P5_Gender.FormattingEnabled = true;
+            this.comboBox_P5_Gender.ItemHeight = 15;
+            this.comboBox_P5_Gender.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.comboBox_P5_Gender.Location = new System.Drawing.Point(254, 188);
+            this.comboBox_P5_Gender.Name = "comboBox_P5_Gender";
+            this.comboBox_P5_Gender.Size = new System.Drawing.Size(60, 23);
+            this.comboBox_P5_Gender.TabIndex = 27;
+            // 
+            // textBox_P5_Name
+            // 
+            this.textBox_P5_Name.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox_P5_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P5_Name.Location = new System.Drawing.Point(16, 188);
+            this.textBox_P5_Name.Multiline = true;
+            this.textBox_P5_Name.Name = "textBox_P5_Name";
+            this.textBox_P5_Name.Size = new System.Drawing.Size(148, 28);
+            this.textBox_P5_Name.TabIndex = 25;
+            // 
+            // textBox_P5_Age
+            // 
+            this.textBox_P5_Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_P5_Age.Location = new System.Drawing.Point(191, 188);
+            this.textBox_P5_Age.Multiline = true;
+            this.textBox_P5_Age.Name = "textBox_P5_Age";
+            this.textBox_P5_Age.Size = new System.Drawing.Size(43, 28);
+            this.textBox_P5_Age.TabIndex = 26;
+            // 
+            // groupBox_Passenger_Details
+            // 
+            this.groupBox_Passenger_Details.BackColor = System.Drawing.Color.Silver;
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P5_Age);
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P5_Name);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P5_Gender);
+            this.groupBox_Passenger_Details.Controls.Add(this.panel_PT_fare);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P6_Child);
+            this.groupBox_Passenger_Details.Controls.Add(this.label19);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P5_Birth);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P4_Child);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P5_Child);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P3_Child);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P5_Senior);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P2_Child);
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P6_Age);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P1_Child);
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P6_Name);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P4_Senior);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P6_Senior);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P3_Senior);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P6_Gender);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P2_Senior);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P6_Birth);
+            this.groupBox_Passenger_Details.Controls.Add(this.checkBox_P1_Senior);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P4_Birth);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P3_Birth);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P2_Birth);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P1_Birth);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P4_Gender);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P3_Gender);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P2_Gender);
+            this.groupBox_Passenger_Details.Controls.Add(this.comboBox_P1_Gender);
+            this.groupBox_Passenger_Details.Controls.Add(this.label13);
+            this.groupBox_Passenger_Details.Controls.Add(this.label12);
+            this.groupBox_Passenger_Details.Controls.Add(this.label11);
+            this.groupBox_Passenger_Details.Controls.Add(this.label10);
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P4_Age);
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P4_Name);
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P3_Age);
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P3_Name);
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P2_Age);
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P2_Name);
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P1_Age);
+            this.groupBox_Passenger_Details.Controls.Add(this.textBox_P1_Name);
+            this.groupBox_Passenger_Details.Controls.Add(this.label9);
+            this.groupBox_Passenger_Details.Controls.Add(this.label8);
+            this.groupBox_Passenger_Details.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_Passenger_Details.ForeColor = System.Drawing.Color.OrangeRed;
+            this.groupBox_Passenger_Details.Location = new System.Drawing.Point(0, 127);
+            this.groupBox_Passenger_Details.Name = "groupBox_Passenger_Details";
+            this.groupBox_Passenger_Details.Size = new System.Drawing.Size(883, 260);
+            this.groupBox_Passenger_Details.TabIndex = 1;
+            this.groupBox_Passenger_Details.TabStop = false;
+            this.groupBox_Passenger_Details.Text = "Passenger Details :";
             // 
             // window_new_Ticket
             // 
@@ -1094,10 +1146,12 @@ namespace E_Ticket_Pro_472
             this.Load += new System.EventHandler(this.window_new_Ticket_Load);
             this.groupBox_PlanMyJourney.ResumeLayout(false);
             this.groupBox_PlanMyJourney.PerformLayout();
-            this.groupBox_Passenger_Details.ResumeLayout(false);
-            this.groupBox_Passenger_Details.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel_PT_fare.ResumeLayout(false);
+            this.panel_PT_fare.PerformLayout();
+            this.groupBox_Passenger_Details.ResumeLayout(false);
+            this.groupBox_Passenger_Details.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1114,15 +1168,6 @@ namespace E_Ticket_Pro_472
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox_Passenger_Details;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -1138,47 +1183,57 @@ namespace E_Ticket_Pro_472
         public System.Windows.Forms.TextBox textBox_From;
         public System.Windows.Forms.TextBox textBox_To;
         public System.Windows.Forms.TextBox textBox_Boarding;
-        public System.Windows.Forms.ComboBox comboBox_P1_Gender;
-        public System.Windows.Forms.TextBox textBox_P1_Age;
-        public System.Windows.Forms.TextBox textBox_P1_Name;
-        public System.Windows.Forms.TextBox textBox_PTFare;
-        public System.Windows.Forms.CheckBox checkBox_P6_Child;
-        public System.Windows.Forms.CheckBox checkBox_P5_Child;
-        public System.Windows.Forms.CheckBox checkBox_P4_Child;
-        public System.Windows.Forms.CheckBox checkBox_P3_Child;
-        public System.Windows.Forms.CheckBox checkBox_P2_Child;
-        public System.Windows.Forms.CheckBox checkBox_P1_Child;
-        public System.Windows.Forms.CheckBox checkBox_P6_Senior;
-        public System.Windows.Forms.CheckBox checkBox_P5_Senior;
-        public System.Windows.Forms.CheckBox checkBox_P4_Senior;
-        public System.Windows.Forms.CheckBox checkBox_P3_Senior;
-        public System.Windows.Forms.CheckBox checkBox_P2_Senior;
-        public System.Windows.Forms.CheckBox checkBox_P1_Senior;
-        public System.Windows.Forms.ComboBox comboBox_P6_Birth;
-        public System.Windows.Forms.ComboBox comboBox_P5_Birth;
-        public System.Windows.Forms.ComboBox comboBox_P4_Birth;
-        public System.Windows.Forms.ComboBox comboBox_P3_Birth;
-        public System.Windows.Forms.ComboBox comboBox_P2_Birth;
-        public System.Windows.Forms.ComboBox comboBox_P1_Birth;
-        public System.Windows.Forms.ComboBox comboBox_P6_Gender;
-        public System.Windows.Forms.ComboBox comboBox_P5_Gender;
-        public System.Windows.Forms.ComboBox comboBox_P4_Gender;
-        public System.Windows.Forms.ComboBox comboBox_P3_Gender;
-        public System.Windows.Forms.ComboBox comboBox_P2_Gender;
-        public System.Windows.Forms.TextBox textBox_P6_Age;
-        public System.Windows.Forms.TextBox textBox_P6_Name;
-        public System.Windows.Forms.TextBox textBox_P5_Age;
-        public System.Windows.Forms.TextBox textBox_P5_Name;
-        public System.Windows.Forms.TextBox textBox_P4_Age;
-        public System.Windows.Forms.TextBox textBox_P4_Name;
-        public System.Windows.Forms.TextBox textBox_P3_Age;
-        public System.Windows.Forms.TextBox textBox_P3_Name;
-        public System.Windows.Forms.TextBox textBox_P2_Age;
-        public System.Windows.Forms.TextBox textBox_P2_Name;
         public System.Windows.Forms.ComboBox comboBox_Irctc_id;
         public System.Windows.Forms.ComboBox comboBox_PaymentMethod;
         public System.Windows.Forms.TextBox textBox_Ticket_name;
         public System.Windows.Forms.TextBox textBox_MobileNo;
         public System.Windows.Forms.ComboBox comboBox_SlotNo;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        public System.Windows.Forms.TextBox textBox_P1_Name;
+        public System.Windows.Forms.TextBox textBox_P1_Age;
+        public System.Windows.Forms.TextBox textBox_P2_Name;
+        public System.Windows.Forms.TextBox textBox_P2_Age;
+        public System.Windows.Forms.TextBox textBox_P3_Name;
+        public System.Windows.Forms.TextBox textBox_P3_Age;
+        public System.Windows.Forms.TextBox textBox_P4_Name;
+        public System.Windows.Forms.TextBox textBox_P4_Age;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        public System.Windows.Forms.ComboBox comboBox_P1_Gender;
+        public System.Windows.Forms.ComboBox comboBox_P2_Gender;
+        public System.Windows.Forms.ComboBox comboBox_P3_Gender;
+        public System.Windows.Forms.ComboBox comboBox_P4_Gender;
+        public System.Windows.Forms.ComboBox comboBox_P1_Birth;
+        public System.Windows.Forms.ComboBox comboBox_P2_Birth;
+        public System.Windows.Forms.ComboBox comboBox_P3_Birth;
+        public System.Windows.Forms.ComboBox comboBox_P4_Birth;
+        public System.Windows.Forms.CheckBox checkBox_P1_Senior;
+        public System.Windows.Forms.ComboBox comboBox_P6_Birth;
+        public System.Windows.Forms.CheckBox checkBox_P2_Senior;
+        public System.Windows.Forms.ComboBox comboBox_P6_Gender;
+        public System.Windows.Forms.CheckBox checkBox_P3_Senior;
+        public System.Windows.Forms.CheckBox checkBox_P6_Senior;
+        public System.Windows.Forms.CheckBox checkBox_P4_Senior;
+        public System.Windows.Forms.TextBox textBox_P6_Name;
+        public System.Windows.Forms.CheckBox checkBox_P1_Child;
+        public System.Windows.Forms.TextBox textBox_P6_Age;
+        public System.Windows.Forms.CheckBox checkBox_P2_Child;
+        public System.Windows.Forms.CheckBox checkBox_P5_Senior;
+        public System.Windows.Forms.CheckBox checkBox_P3_Child;
+        public System.Windows.Forms.CheckBox checkBox_P5_Child;
+        public System.Windows.Forms.CheckBox checkBox_P4_Child;
+        public System.Windows.Forms.ComboBox comboBox_P5_Birth;
+        private System.Windows.Forms.Label label19;
+        public System.Windows.Forms.CheckBox checkBox_P6_Child;
+        private System.Windows.Forms.Panel panel_PT_fare;
+        private System.Windows.Forms.Label label14;
+        public System.Windows.Forms.TextBox textBox_PTFare;
+        public System.Windows.Forms.ComboBox comboBox_P5_Gender;
+        public System.Windows.Forms.TextBox textBox_P5_Name;
+        public System.Windows.Forms.TextBox textBox_P5_Age;
+        public System.Windows.Forms.GroupBox groupBox_Passenger_Details;
     }
 }

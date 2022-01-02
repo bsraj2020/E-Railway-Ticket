@@ -188,10 +188,10 @@ namespace E_Ticket_Pro_472
             // 
             this.dataGridView_BankDetails.BackgroundColor = System.Drawing.Color.Lavender;
             this.dataGridView_BankDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_BankDetails.Location = new System.Drawing.Point(319, 47);
+            this.dataGridView_BankDetails.Location = new System.Drawing.Point(289, 47);
             this.dataGridView_BankDetails.Name = "dataGridView_BankDetails";
             this.dataGridView_BankDetails.ReadOnly = true;
-            this.dataGridView_BankDetails.Size = new System.Drawing.Size(436, 179);
+            this.dataGridView_BankDetails.Size = new System.Drawing.Size(473, 179);
             this.dataGridView_BankDetails.TabIndex = 4;
             // 
             // label5
@@ -252,7 +252,7 @@ namespace E_Ticket_Pro_472
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(353, 31);
+            this.label7.Location = new System.Drawing.Point(323, 31);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 13);
             this.label7.TabIndex = 5;
@@ -262,7 +262,7 @@ namespace E_Ticket_Pro_472
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(468, 31);
+            this.label8.Location = new System.Drawing.Point(438, 31);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 13);
             this.label8.TabIndex = 5;
@@ -272,7 +272,7 @@ namespace E_Ticket_Pro_472
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(577, 30);
+            this.label9.Location = new System.Drawing.Point(581, 31);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(63, 13);
             this.label9.TabIndex = 5;
@@ -282,7 +282,7 @@ namespace E_Ticket_Pro_472
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(664, 31);
+            this.label10.Location = new System.Drawing.Point(675, 31);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 5;

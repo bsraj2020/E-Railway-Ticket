@@ -121,6 +121,7 @@ namespace E_Ticket_Pro_472
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridView_ADD_Id.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_ADD_Id.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridView_ADD_Id.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,6 +139,7 @@ namespace E_Ticket_Pro_472
             this.dataGridView_ADD_Id.RowHeadersWidth = 60;
             this.dataGridView_ADD_Id.Size = new System.Drawing.Size(348, 225);
             this.dataGridView_ADD_Id.TabIndex = 31;
+            this.dataGridView_ADD_Id.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_ADD_Id_CellContentClick);
             // 
             // label5
             // 
